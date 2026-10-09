@@ -9,7 +9,8 @@
   },
   "license_files": [
     "licenses/TomThumb-LICENSE.txt",
-    "licenses/Spleen-LICENSE.txt"
+    "licenses/Spleen-LICENSE.txt",
+    "licenses/UNIFONT-COPYING.txt"
   ],
   "resources": [
     {
@@ -25,6 +26,20 @@
       "path": "assets/fonts/spleen-5x8.bdf",
       "license": "BSD-2-Clause",
       "provenance": "Spleen 5x8 2.2.0 by Frederic Cambus; unmodified upstream BDF, SHA-256 40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb"
+    },
+    {
+      "id": "spleen-32x64",
+      "kind": "font",
+      "path": "assets/fonts/spleen-32x64.bdf",
+      "license": "BSD-2-Clause",
+      "provenance": "Spleen 32x64 2.2.0 by Frederic Cambus; unmodified upstream BDF, SHA-256 46897e4c11aec89547805c329b1e8fb572f7580ccb2f7217f5b82aff3b035a71"
+    },
+    {
+      "id": "unifont-16.0.04",
+      "kind": "font",
+      "path": "assets/fonts/unifont-16.0.04.bdf",
+      "license": "GPL-2.0-or-later WITH Font-exception-2.0",
+      "provenance": "GNU Unifont 16.0.04; full upstream COPYING retained; unmodified BDF SHA-256 40343cd7e33df7351c5a448497473697f82865e766c3ebb059f3ed6ade765587"
     }
   ],
   "metadata": {
@@ -44,6 +59,22 @@
         "source_license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
         "license": "BSD-2-Clause",
         "sha256": "40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb"
+      },
+      {
+        "id": "spleen-32x64",
+        "version": "2.2.0",
+        "source_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-32x64.bdf",
+        "source_license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "license": "BSD-2-Clause",
+        "sha256": "46897e4c11aec89547805c329b1e8fb572f7580ccb2f7217f5b82aff3b035a71"
+      },
+      {
+        "id": "unifont-16.0.04",
+        "version": "16.0.04",
+        "source_url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/font-builds/unifont-16.0.04.bdf.gz",
+        "source_license_url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/unifont-16.0.04.tar.gz (COPYING)",
+        "license": "GPL-2.0-or-later WITH Font-exception-2.0",
+        "sha256": "40343cd7e33df7351c5a448497473697f82865e766c3ebb059f3ed6ade765587"
       }
     ]
   },
@@ -56,7 +87,7 @@
         "properties": {
           "color": { "type": "string" },
           "size": { "type": "integer", "enum": [16, 32] },
-          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8"] }
+          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"] }
         },
         "additionalProperties": false
       },
@@ -75,7 +106,7 @@
         "properties": {
           "color": { "type": "string" },
           "size": { "type": "integer", "enum": [16, 32] },
-          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8"] }
+          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"] }
         },
         "additionalProperties": false
       },
@@ -93,7 +124,7 @@
         "type": "object",
         "properties": {
           "color": { "type": "string" },
-          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8"] }
+          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"] }
         },
         "additionalProperties": false
       },

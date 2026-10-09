@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch and inventory two pinned upstream BDFs; never convert font formats."""
+"""Fetch and inventory four pinned BDFs; never convert font formats."""
 
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_DOWNLOAD = 128 * 1024
+RUNTIME_ROOT = ROOT.parent / "dotting"
 SOURCES = (
     {
         "id": "tom-thumb-4x6",
@@ -42,6 +43,33 @@ SOURCES = (
         "descent": 1,
         "glyphs": 472,
     },
+    {
+        "id": "spleen-32x64",
+        "path": "packages/core/assets/fonts/spleen-32x64.bdf",
+        "url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-32x64.bdf",
+        "version": "2.2.0",
+        "sha256": "46897e4c11aec89547805c329b1e8fb572f7580ccb2f7217f5b82aff3b035a71",
+        "license": "BSD-2-Clause",
+        "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "bbox": "32 64 0 -12",
+        "ascent": 52,
+        "descent": 12,
+        "glyphs": 978,
+    },
+    {
+        "id": "unifont-16.0.04",
+        "path": "packages/core/assets/fonts/unifont-16.0.04.bdf",
+        "url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/font-builds/unifont-16.0.04.bdf.gz",
+        "version": "16.0.04",
+        "sha256": "40343cd7e33df7351c5a448497473697f82865e766c3ebb059f3ed6ade765587",
+        "license": "GPL-2.0-or-later WITH Font-exception-2.0",
+        "license_url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/unifont-16.0.04.tar.gz (COPYING)",
+        "bbox": "16 16 0 -2",
+        "ascent": 14,
+        "descent": 2,
+        "glyphs": 57086,
+        "local_source": "assets/fonts/unifont-16.0.04.bdf",
+    },
 )
 SPLEEN_LICENSE = {
     "path": "packages/core/licenses/Spleen-LICENSE.txt",
@@ -49,6 +77,11 @@ SPLEEN_LICENSE = {
     "sha256": "f33fe8679d5b2abecc4f1313ce6c6bfa58262964de5f7bca146596a7318047af",
 }
 TOM_LICENSE = ROOT / "packages/core/licenses/TomThumb-LICENSE.txt"
+UNIFONT_LICENSE = {
+    "path": "packages/core/licenses/UNIFONT-COPYING.txt",
+    "source": "assets/fonts/UNIFONT-COPYING.txt",
+    "sha256": "5a65797606332f2f63057fd81ea0ff35f74043583515bf900ee9b42efa8176a6",
+}
 
 
 def safe_output(relative: str) -> Path:
@@ -127,7 +160,16 @@ def main() -> None:
 
     inventory = []
     for spec in SOURCES:
-        data = download(str(spec["url"]), str(spec["sha256"]))
+        if "local_source" in spec:
+            source = RUNTIME_ROOT / str(spec["local_source"])
+            with source.open("rb") as input_file:
+                data = input_file.read(16 * 1024 * 1024 + 1)
+            if len(data) > 16 * 1024 * 1024:
+                raise ValueError(f"local font exceeds 16 MiB bound: {source}")
+            if hashlib.sha256(data).hexdigest() != spec["sha256"]:
+                raise ValueError(f"SHA-256 mismatch for local read-only font: {source}")
+        else:
+            data = download(str(spec["url"]), str(spec["sha256"]), 2 * 1024 * 1024)
         metrics = header(data, spec)
         target = safe_output(str(spec["path"]))
         atomic_write(target, data)
@@ -147,6 +189,14 @@ def main() -> None:
 
     spleen_license = download(SPLEEN_LICENSE["url"], SPLEEN_LICENSE["sha256"], 16 * 1024)
     atomic_write(safe_output(SPLEEN_LICENSE["path"]), spleen_license)
+    unifont_license_path = RUNTIME_ROOT / UNIFONT_LICENSE["source"]
+    with unifont_license_path.open("rb") as input_file:
+        unifont_license = input_file.read(64 * 1024 + 1)
+    if len(unifont_license) > 64 * 1024 or hashlib.sha256(unifont_license).hexdigest() != UNIFONT_LICENSE["sha256"]:
+        raise ValueError("Unifont license source hash mismatch")
+    if b"GNU font embedding exception" not in unifont_license or b"SIL OPEN FONT LICENSE Version 1.1" not in unifont_license:
+        raise ValueError("Unifont license source does not contain the expected font licensing terms")
+    atomic_write(safe_output(UNIFONT_LICENSE["path"]), unifont_license)
     inventory_dir = safe_output("packages/core/inventory/.sentinel").parent
     json_path = inventory_dir / "fonts.json"
     csv_path = inventory_dir / "fonts.csv"

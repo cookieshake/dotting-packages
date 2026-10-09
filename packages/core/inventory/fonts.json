@@ -28,5 +28,35 @@
     "sha256": "40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb",
     "source_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-5x8.bdf",
     "version": "2.2.0"
+  },
+  {
+    "ascent": 52,
+    "bounding_box": "32 64 0 -12",
+    "bytes": 670003,
+    "descent": 12,
+    "font_name": "-misc-spleen-medium-r-normal--64-640-72-72-C-320-ISO10646-1",
+    "glyph_count": 978,
+    "id": "spleen-32x64",
+    "license": "BSD-2-Clause",
+    "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+    "path": "assets/fonts/spleen-32x64.bdf",
+    "sha256": "46897e4c11aec89547805c329b1e8fb572f7580ccb2f7217f5b82aff3b035a71",
+    "source_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-32x64.bdf",
+    "version": "2.2.0"
+  },
+  {
+    "ascent": 14,
+    "bounding_box": "16 16 0 -2",
+    "bytes": 9383649,
+    "descent": 2,
+    "font_name": "-gnu-Unifont-Medium-R-Normal-Sans-16-160-75-75-c-80-iso10646-1",
+    "glyph_count": 57086,
+    "id": "unifont-16.0.04",
+    "license": "GPL-2.0-or-later WITH Font-exception-2.0",
+    "license_url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/unifont-16.0.04.tar.gz (COPYING)",
+    "path": "assets/fonts/unifont-16.0.04.bdf",
+    "sha256": "40343cd7e33df7351c5a448497473697f82865e766c3ebb059f3ed6ade765587",
+    "source_url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/font-builds/unifont-16.0.04.bdf.gz",
+    "version": "16.0.04"
   }
 ]
