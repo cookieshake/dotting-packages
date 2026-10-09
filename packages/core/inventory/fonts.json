@@ -1,0 +1,32 @@
+[
+  {
+    "ascent": 5,
+    "bounding_box": "3 6 0 -1",
+    "bytes": 19864,
+    "descent": 1,
+    "font_name": "-Raccoon-Fixed4x6-Medium-R-Normal--6-60-75-75-P-40-ISO10646-1",
+    "glyph_count": 203,
+    "id": "tom-thumb-4x6",
+    "license": "MIT",
+    "license_url": "https://robey.lag.net/2010/01/23/tiny-monospace-font.html",
+    "path": "assets/fonts/tom-thumb-4x6.bdf",
+    "sha256": "d2c8c15de5ca83fcaef7cadc06d8db578c082507fa3da8a8f698d026fdda2b14",
+    "source_url": "https://robey.lag.net/downloads/tom-thumb.bdf",
+    "version": "upstream 2010-01-23"
+  },
+  {
+    "ascent": 7,
+    "bounding_box": "5 8 0 -1",
+    "bytes": 59796,
+    "descent": 1,
+    "font_name": "-misc-spleen-medium-r-normal--8-80-72-72-C-50-ISO10646-1",
+    "glyph_count": 472,
+    "id": "spleen-5x8",
+    "license": "BSD-2-Clause",
+    "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+    "path": "assets/fonts/spleen-5x8.bdf",
+    "sha256": "40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb",
+    "source_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-5x8.bdf",
+    "version": "2.2.0"
+  }
+]

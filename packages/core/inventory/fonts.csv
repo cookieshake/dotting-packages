@@ -1,0 +1,3 @@
+id,path,version,source_url,license_url,license,sha256,bytes,font_name,bounding_box,ascent,descent,glyph_count
+tom-thumb-4x6,assets/fonts/tom-thumb-4x6.bdf,upstream 2010-01-23,https://robey.lag.net/downloads/tom-thumb.bdf,https://robey.lag.net/2010/01/23/tiny-monospace-font.html,MIT,d2c8c15de5ca83fcaef7cadc06d8db578c082507fa3da8a8f698d026fdda2b14,19864,-Raccoon-Fixed4x6-Medium-R-Normal--6-60-75-75-P-40-ISO10646-1,3 6 0 -1,5,1,203
+spleen-5x8,assets/fonts/spleen-5x8.bdf,2.2.0,https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-5x8.bdf,https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE,BSD-2-Clause,40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb,59796,-misc-spleen-medium-r-normal--8-80-72-72-C-50-ISO10646-1,5 8 0 -1,7,1,472

@@ -1,0 +1,103 @@
+{
+  "id": "core",
+  "version": "0.1.0",
+  "sdk": { "min": "1.0.0", "max": "1.0.0" },
+  "entry": "main.js",
+  "license": "MIT",
+  "provenance": {
+    "source": "Dotting core widgets and upstream bitmap fonts; see README.md and metadata.fonts for pinned upstream provenance"
+  },
+  "license_files": [
+    "licenses/TomThumb-LICENSE.txt",
+    "licenses/Spleen-LICENSE.txt"
+  ],
+  "resources": [
+    {
+      "id": "tom-thumb-4x6",
+      "kind": "font",
+      "path": "assets/fonts/tom-thumb-4x6.bdf",
+      "license": "MIT",
+      "provenance": "Tom Thumb by Robey Pointer; unmodified upstream BDF, SHA-256 d2c8c15de5ca83fcaef7cadc06d8db578c082507fa3da8a8f698d026fdda2b14"
+    },
+    {
+      "id": "spleen-5x8",
+      "kind": "font",
+      "path": "assets/fonts/spleen-5x8.bdf",
+      "license": "BSD-2-Clause",
+      "provenance": "Spleen 5x8 2.2.0 by Frederic Cambus; unmodified upstream BDF, SHA-256 40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb"
+    }
+  ],
+  "metadata": {
+    "fonts": [
+      {
+        "id": "tom-thumb-4x6",
+        "version": "upstream 2010-01-23",
+        "source_url": "https://robey.lag.net/downloads/tom-thumb.bdf",
+        "source_license_url": "https://robey.lag.net/2010/01/23/tiny-monospace-font.html",
+        "license": "MIT",
+        "sha256": "d2c8c15de5ca83fcaef7cadc06d8db578c082507fa3da8a8f698d026fdda2b14"
+      },
+      {
+        "id": "spleen-5x8",
+        "version": "2.2.0",
+        "source_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-5x8.bdf",
+        "source_license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "license": "BSD-2-Clause",
+        "sha256": "40488184d075d0c752cdd239b441c5ece51e50b353156f2496c756c384ab01cb"
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "text",
+      "handler": "renderText",
+      "config_schema": {
+        "type": "object",
+        "properties": {
+          "color": { "type": "string" },
+          "size": { "type": "integer", "enum": [16, 32] },
+          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8"] }
+        },
+        "additionalProperties": false
+      },
+      "input_schema": {
+        "type": "object",
+        "required": ["value"],
+        "properties": { "value": { "type": "string" } },
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "number",
+      "handler": "renderNumber",
+      "config_schema": {
+        "type": "object",
+        "properties": {
+          "color": { "type": "string" },
+          "size": { "type": "integer", "enum": [16, 32] },
+          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8"] }
+        },
+        "additionalProperties": false
+      },
+      "input_schema": {
+        "type": "object",
+        "required": ["value"],
+        "properties": { "value": { "type": "number" } },
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "clock",
+      "handler": "renderClock",
+      "config_schema": {
+        "type": "object",
+        "properties": {
+          "color": { "type": "string" },
+          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8"] }
+        },
+        "additionalProperties": false
+      },
+      "input_schema": { "type": "object", "additionalProperties": false }
+    }
+  ]
+}
