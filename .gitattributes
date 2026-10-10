@@ -1,10 +1,7 @@
 packages/core/assets/fonts/spleen-5x8.bdf filter=lfs diff=lfs merge=lfs -text
-packages/core/assets/fonts/spleen-32x64.bdf filter=lfs diff=lfs merge=lfs -text
 packages/core/assets/fonts/unifont-16.0.04.bdf filter=lfs diff=lfs merge=lfs -text
-packages/core/fonts/spleen/2.2.0/spleen-6x12.bdf filter=lfs diff=lfs merge=lfs -text
-packages/core/fonts/spleen/2.2.0/spleen-8x16.bdf filter=lfs diff=lfs merge=lfs -text
-packages/core/fonts/spleen/2.2.0/spleen-12x24.bdf filter=lfs diff=lfs merge=lfs -text
-packages/core/fonts/spleen/2.2.0/spleen-16x32.bdf filter=lfs diff=lfs merge=lfs -text
 packages/core/fonts/**/*.bdf filter=lfs diff=lfs merge=lfs -text
+packages/fonts-extra/**/*.bdf filter=lfs diff=lfs merge=lfs -text
 packages/font-fusion-pixel/**/*.bdf filter=lfs diff=lfs merge=lfs -text
 packages/font-ark-pixel/**/*.bdf filter=lfs diff=lfs merge=lfs -text
+packages/core/assets/fonts/tom-thumb-4x6.bdf -filter -diff -merge text

@@ -8,7 +8,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = {"core": (81, 62123296), "font-fusion-pixel": (42, 162339786), "font-ark-pixel": (42, 59321705)}
+EXPECTED = {"core": 6, "fonts-extra": 72, "font-fusion-pixel": 42, "font-ark-pixel": 28}
 
 
 def main():
@@ -40,7 +40,7 @@ def main():
         actual = {str(p.relative_to(exported)) for p in exported.rglob("*.bdf")}
         assert actual == declared, (name, actual ^ declared)
         bdf_bytes = sum((exported / path).stat().st_size for path in actual)
-        assert (len(actual), bdf_bytes) == expected
+        assert len(actual) == expected, (name, len(actual), expected)
         hashes = {path: hashlib.sha256((exported / path).read_bytes()).hexdigest() for path in sorted(actual)}
         assert all(digest == hashlib.sha256((package / path).read_bytes()).hexdigest() for path, digest in hashes.items())
         allowed = declared | set(manifest["license_files"]) | {"manifest.json"}

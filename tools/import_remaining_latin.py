@@ -174,7 +174,7 @@ def main():
                          "missing_or_unresolved":([] if family in ("tamzen", "bitocra", "gohu") else
                              (["Official release archive did not contain a license notice"] if license_row["status"]!="captured" else [])),
                         "status":"complete" if family_rows and all(r["status"] in ("imported","preserved-existing") for r in family_rows) and license_row["status"]=="captured" else "partial","files":family_rows})
-        inv=ROOT/"packages/core/inventory/families"/(family+".json")
+        inv=ROOT/".source-cache/inventory/families"/(family+".json")
         atomic(inv,(json.dumps(results[-1],indent=2,sort_keys=True)+"\n").encode())
     print(json.dumps({"total_bdf_bytes":total,"families":results},indent=2))
 

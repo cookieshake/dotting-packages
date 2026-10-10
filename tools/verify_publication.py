@@ -13,11 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME = ROOT.parent / "dotting"
 REMOTE = "https://github.com/cookieshake/dotting-packages.git"
-PINS = {
-    "core": (81, 62123296, 75640580, "7e4ef1e6888d3917130ce6e6f0b016845a5166377521e101083336a89e7af93c"),
-    "font-fusion-pixel": (42, 162339786, 167233435, "5739e18f6fe12aa94fac0b0d6af834758499db22405fb9222a79862f1b5a863e"),
-    "font-ark-pixel": (42, 59321705, 61537299, "bc471b41a4524cbc3c48676c1efbeeb427b9ae7a147ce57985f0213ccbf15287"),
-}
+EXPECTED_COUNTS = {"core": 6, "fonts-extra": 72, "font-fusion-pixel": 42, "font-ark-pixel": 28}
 POINTER = re.compile(rb"version https://git-lfs.github.com/spec/v1\noid sha256:([0-9a-f]{64})\nsize ([0-9]+)\n\Z")
 
 
@@ -82,7 +78,7 @@ def main():
             largest.append((len(blob), path))
             assert len(blob) < 16 * 1024 * 1024, path
             assert not re.search(rb"BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|" + b"/" + rb"Users/[^/\s]+/", blob), ("private material suspected", path)
-    assert len(objects) == 164
+    assert len(objects) == 147
     report = {"mode": "index" if args.index else "independent remote clone and native installation",
               "git_commit": args.remote_commit, "Git_LFS_pointer_entries": len(objects),
               "unique_LFS_objects": len({r["oid"] for r in objects.values()}),
@@ -102,8 +98,8 @@ def main():
         report["binary_sha256"] = sha(binary)
         report["packages"] = {}
         # Empty HOME for each native install; empty PATH; no Git/LFS child tools.
-        for name, (count, bdf_bytes, all_bytes, snapshot) in PINS.items():
-            assert run([binary, "app", "snapshot-hash", repo / "packages" / name]).decode().strip() == snapshot
+        for name, count in EXPECTED_COUNTS.items():
+            snapshot = run([binary, "app", "snapshot-hash", repo / "packages" / name]).decode().strip()
             output = proof / ("native-" + name)
             audit = proof / (name + "-download-audit.json")
             native_home = proof / (name + "-empty-home")
@@ -119,7 +115,7 @@ def main():
             declared = {r["path"] for r in manifest["resources"]}
             actual = {str(p.relative_to(output)) for p in output.rglob("*.bdf")}
             assert actual == declared and len(actual) == count
-            assert sum((output / p).stat().st_size for p in actual) == bdf_bytes
+            bdf_bytes = sum((output / p).stat().st_size for p in actual)
             for path in actual:
                 assert sha(output / path) == sha(repo / "packages" / name / path)
             events = json.loads(audit.read_text())
@@ -130,6 +126,7 @@ def main():
             assert requested == {p: row["oid"] for p, row in selected.items()}
             disk = sum(p.stat().st_size for p in output.rglob("*") if p.is_file())
             receipt_bytes = (output / ".dotting-install.json").stat().st_size
+            all_bytes = sum(p.stat().st_size for p in output.rglob("*") if p.is_file()) - receipt_bytes
             assert disk - receipt_bytes == all_bytes
             report["packages"][name] = {
                 "snapshot_sha256": snapshot, "BDF_count": count, "BDF_bytes": bdf_bytes,

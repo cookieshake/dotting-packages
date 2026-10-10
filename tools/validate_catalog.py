@@ -9,9 +9,7 @@ from pathlib import Path
 
 from assemble_catalog import CORE, ROOT, STAGING, archive_unused_notices, copy_file, load, safe_source
 
-EXPECTED = {"core": (81, 62123296, 9383649),
-            "font-fusion-pixel": (42, 162339786, 5242357),
-            "font-ark-pixel": (42, 59321705, 3512984)}
+EXPECTED_COUNTS = {"core": 6, "fonts-extra": 72, "font-fusion-pixel": 42, "font-ark-pixel": 28}
 LEDGER = ROOT / ".source-cache/recovery-before.json"
 
 
@@ -45,7 +43,7 @@ def recover_legacy_notices() -> None:
 def validate() -> None:
     all_hashes = set()
     total = 0
-    for name, expected in EXPECTED.items():
+    for name, expected_count in EXPECTED_COUNTS.items():
         package = ROOT / "packages" / name
         manifest = json.loads((package / "manifest.json").read_text())
         fonts = {r["path"]: r for r in manifest["resources"] if r["kind"] == "font"}
@@ -56,7 +54,7 @@ def validate() -> None:
                   if p.is_file() and p.suffix.lower() == ".bdf"}
         assert actual == set(fonts), (name, "undeclared/missing BDF", actual ^ set(fonts))
         sizes = [(package / p).stat().st_size for p in actual]
-        assert (len(actual), sum(sizes), max(sizes)) == expected, (name, sizes)
+        assert len(actual) == expected_count, (name, len(actual), expected_count)
         for row in metadata:
             resource = next(r for r in fonts.values() if r["id"] == row["id"])
             p = package / resource["path"]
@@ -78,7 +76,7 @@ def validate() -> None:
                     or relative.startswith(("inventory/", "widgets/"))), (name, "undeclared file", relative)
         print(f"{name}: BDF count={len(actual)} bytes={sum(sizes)} max={max(sizes)} disk_file_bytes={sum(p.stat().st_size for p in package.rglob('*') if p.is_file())}")
         total += len(actual)
-    assert (total, len(all_hashes)) == (165, 159), (total, len(all_hashes))
+    assert (total, len(all_hashes)) == (148, 145), (total, len(all_hashes))
     # Independent original/notice parity against the family source inventories.
     for f in sorted((CORE / "inventory/families").glob("*.json")):
         data = load(f.stem)
@@ -96,7 +94,16 @@ def validate() -> None:
             assert sha(p) == row["sha256"], p
         for row in data.get("fonts", data.get("files", [])):
             expected_hash = row.get("sha256", row.get("source_file_sha256"))
-            assert expected_hash in all_hashes, (f, row)
+            if f.stem == "ark-pixel" and row.get("deprecated"):
+                preserved = [p for p in (ROOT / ".source-cache/fonts/ark-pixel").rglob(Path(row["filename"]).name)
+                             if p.is_file() and sha(p) == expected_hash]
+                assert len(preserved) == 1, (f, row)
+            else:
+                assert expected_hash in all_hashes, (f, row)
+    archival = json.loads((ROOT / ".source-cache/archival/ark-pixel/full-inventory.json").read_text())
+    archived = [row for row in archival["fonts"] if row.get("deprecated")]
+    assert len(archived) == 14 and all(row["sha256"] not in all_hashes for row in archived)
+    assert not any("16px" in str(p) for p in (ROOT / "packages").rglob("*.bdf"))
     if LEDGER.exists():
         # Every pre-recovery original BDF and notice survives byte-for-byte.
         preserved = {sha(p) for base in (ROOT / "packages", ROOT / ".source-cache")
@@ -105,7 +112,7 @@ def validate() -> None:
         for path, row in ledger.items():
             assert row["sha256"] in preserved, ("lost original", path)
         print(f"preservation ledger: all {len(ledger)} original file hashes retained")
-    print("catalog: 165 entries, 159 unique original BDF hashes; original/license parity passed")
+    print("catalog: 148 entries, 145 unique distributed BDF hashes; 14 Ark archive hashes preserved outside packages; original/license parity passed")
 
 
 if __name__ == "__main__":

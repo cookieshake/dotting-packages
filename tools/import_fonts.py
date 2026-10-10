@@ -46,7 +46,7 @@ SOURCES = (
     },
     {
         "id": "spleen-32x64",
-        "path": "packages/core/assets/fonts/spleen-32x64.bdf",
+        "path": ".source-cache/fonts/spleen/2.2.0/spleen-32x64.bdf",
         "url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-32x64.bdf",
         "version": "2.2.0",
         "sha256": "46897e4c11aec89547805c329b1e8fb572f7580ccb2f7217f5b82aff3b035a71",
@@ -252,7 +252,7 @@ def main() -> None:
     if b"GNU font embedding exception" not in unifont_license or b"SIL OPEN FONT LICENSE Version 1.1" not in unifont_license:
         raise ValueError("Unifont license source does not contain the expected font licensing terms")
     atomic_write(safe_output(UNIFONT_LICENSE["path"]), unifont_license)
-    inventory_dir = safe_output("packages/core/inventory/.sentinel").parent
+    inventory_dir = safe_output(".source-cache/inventory/.sentinel").parent
     json_path = inventory_dir / "fonts.json"
     csv_path = inventory_dir / "fonts.csv"
     atomic_write(json_path, (json.dumps(inventory, indent=2, sort_keys=True) + "\n").encode())

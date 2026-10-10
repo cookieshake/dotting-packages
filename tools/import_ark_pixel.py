@@ -263,8 +263,19 @@ def main() -> None:
             "size_style_region_counts": sizes, "archives": archives,
             "fonts": [row for _, _, row in sorted(staged, key=lambda item: item[2]["path"])],
         }
-        write_atomic(ROOT / "packages/core/inventory/families/ark-pixel.json", (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode())
-        for row in inventory["fonts"]:
+        archival_path = ROOT / ".source-cache/archival/ark-pixel/full-inventory.json"
+        write_atomic(archival_path, (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode())
+        distributed = dict(inventory)
+        distributed["fonts"] = [row for row in inventory["fonts"] if not row["deprecated"]]
+        distributed["counts"] = dict(inventory["counts"])
+        distributed["counts"]["fonts"] = len(distributed["fonts"])
+        distributed["counts"]["font_bytes"] = sum(row["bytes"] for row in distributed["fonts"])
+        distributed["license_notices"] = [row for row in license_rows if row["path"] == "licenses/ark-pixel/OFL.txt"]
+        distributed["license_path"] = "licenses/ark-pixel/OFL.txt"
+        distributed["expected"] = {"sizes_px": [10, 12], "styles": ["mono", "proportional"], "regions_per_size_style": 7}
+        distributed["size_style_region_counts"] = {key: value for key, value in sizes.items() if key in {"10", "12"}}
+        write_atomic(ROOT / ".source-cache/inventory/families/ark-pixel.json", (json.dumps(distributed, ensure_ascii=False, indent=2) + "\n").encode())
+        for row in distributed["fonts"]:
             print(f"{row['path']}: {row['bytes']} bytes sha256={row['sha256']} glyphs={row['glyph_count']} BBX={row['bbx']} DWIDTH={row['dwidth_values']} region={row['region']}")
         for notice in license_rows:
             print(f"license {notice['source_member']} ({notice['path']}): {notice['bytes']} bytes sha256={notice['sha256']}")

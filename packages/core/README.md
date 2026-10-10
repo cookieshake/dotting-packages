@@ -24,13 +24,16 @@ wall-time clock.
 | --- | --- | --- | ---: | --- | --- |
 | `tom-thumb-4x6` | `assets/fonts/tom-thumb-4x6.bdf` | 4x6 cell; BDF bounding box 3x6, ascent 5, descent 1 | 203 | MIT | Robey Pointer, upstream BDF URL and notice in the manifest/license file |
 | `spleen-5x8` | `assets/fonts/spleen-5x8.bdf` | 5x8; BDF bounding box 5x8, ascent 7, descent 1 | 472 | BSD-2-Clause | Spleen 2.2.0, Frederic Cambus |
-| `spleen-32x64` | `assets/fonts/spleen-32x64.bdf` | 32x64; BDF bounding box 32x64, ascent 52, descent 12 | 978 | BSD-2-Clause | Spleen 2.2.0, Frederic Cambus |
 | `unifont-16.0.04` | `assets/fonts/unifont-16.0.04.bdf` | 16x16; BDF bounding box 16x16, ascent 14, descent 2 | 57,086 | GPL-2.0-or-later WITH Font-exception-2.0 (also dual-licensed OFL 1.1 upstream) | GNU Unifont 16.0.04 |
+| `fonts-fusion-pixel-8-mono-e4e1a8b5cf7f` | `fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-latin.bdf` | Latin, 8px monospaced | — | OFL-1.1 | Fusion Pixel |
+| `fonts-fusion-pixel-10-mono-e71b599d29d3` | `fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-latin.bdf` | Latin, 10px monospaced | — | OFL-1.1 | Fusion Pixel |
+| `fonts-fusion-pixel-12-mono-6b2a5a087d97` | `fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-latin.bdf` | Latin, 12px monospaced | — | OFL-1.1 | Fusion Pixel |
 
-All four files are the unmodified upstream BDFs. Exact SHA-256, byte count, font
-header metrics, glyph count, license, and source URL are emitted in
-`inventory/fonts.json` and `inventory/fonts.csv` by `python3 tools/import_fonts.py`.
+All six files are unmodified upstream BDFs. Exact SHA-256, byte count, font
+header metrics, glyph count, license, and source URL are recorded in the compact
+manifest and package inventory; full importer inventory is kept in ignored
+`.source-cache/inventory/`.
 The importer reads the Unifont BDF and complete `COPYING` from the sibling
 runtime checkout read-only; it does not alter that checkout. The complete
-redistribution texts are in `licenses/`. This four-font slice is not a complete
-font catalog; see `inventory/fonts-todo.json` for explicitly pending candidates.
+redistribution texts are in `licenses/`. Core contains only these six BDF
+resources; other English families and Spleen sizes are in `fonts-extra`.

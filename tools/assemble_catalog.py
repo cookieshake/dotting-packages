@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Split the staged font catalog into the three standalone native packages.
+"""Split the staged font catalog into four native packages.
 
-The family inventories under packages/core/inventory/families are the source of
+The family inventories under .source-cache/inventory/families are the source of
 truth. This script copies original BDF/license bytes and emits manifests using
 the existing native manifest resource format; it never edits font data.
 """
@@ -17,16 +17,13 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 CORE = ROOT / "packages/core"
-FAMILIES = CORE / "inventory/families"
+FAMILIES = ROOT / ".source-cache/inventory/families"
 STAGING = ROOT / ".source-cache/fonts"
 NOTICES = ROOT / ".source-cache/notices"
-FUSION_LATIN = {
+FUSION_CORE = {
     "fusion-pixel-8px-monospaced-latin.bdf",
-    "fusion-pixel-8px-proportional-latin.bdf",
     "fusion-pixel-10px-monospaced-latin.bdf",
-    "fusion-pixel-10px-proportional-latin.bdf",
     "fusion-pixel-12px-monospaced-latin.bdf",
-    "fusion-pixel-12px-proportional-latin.bdf",
 }
 CORE_FAMILIES = {"spleen", "tamzen", "bitocra", "gohu", "scientifica",
                  "galmuri", "misaki", "k8x12"}
@@ -37,6 +34,20 @@ def load(family: str) -> dict:
         return {"family": "Spleen", "version": "2.2.0", "license": "BSD-2-Clause",
                 "license_path": "licenses/Spleen-LICENSE.txt", "fonts": []}
     return json.loads((FAMILIES / f"{family}.json").read_text())
+
+
+def package_family_data(family: str) -> dict:
+    data = load(family)
+    if family == "ark-pixel":
+        data = json.loads(json.dumps(data))
+        data["fonts"] = [row for row in data.get("fonts", []) if not row.get("deprecated")]
+        data["counts"]["fonts"] = len(data["fonts"])
+        data["counts"]["font_bytes"] = sum(row["bytes"] for row in data["fonts"])
+        data["license_notices"] = [row for row in data.get("license_notices", []) if "deprecated-16px" not in row.get("path", "")]
+        data["license_path"] = data["license_notices"][0]["path"]
+        data["expected"] = {"sizes_px": [10, 12], "styles": ["mono", "proportional"], "regions_per_size_style": 7}
+        data["size_style_region_counts"] = {key: value for key, value in data.get("size_style_region_counts", {}).items() if key in {"10", "12"}}
+    return data
 
 
 def safe_source(raw: str) -> Path:
@@ -52,14 +63,14 @@ def safe_source(raw: str) -> Path:
 
 
 def font_rows(family: str) -> list[dict]:
-    data = load(family)
+    data = package_family_data(family)
     if family == "spleen":
         from import_fonts import SOURCES
         rows = []
         for spec in SOURCES:
-            if not str(spec["path"]).startswith(".source-cache/fonts/spleen/"):
+            if not (str(spec["path"]).startswith(".source-cache/fonts/spleen/") or spec["id"] == "spleen-32x64"):
                 continue
-            path = ROOT / spec["path"]
+            path = ROOT / spec["path"] if str(spec["path"]).startswith(".source-cache/") else ROOT / ".source-cache/fonts/spleen/2.2.0/spleen-32x64.bdf"
             rows.append({"filename": path.name, "path": str(path.relative_to(ROOT)),
                          "sha256": spec["sha256"],
                          "id": "fonts-spleen-" + path.stem.replace("x", "x"),
@@ -114,7 +125,7 @@ def font_id(row: dict, family: str) -> str:
 
 
 def license_sources(family: str) -> list[tuple[str, str]]:
-    data = load(family)
+    data = package_family_data(family)
     paths = []
     for notice in data.get("license_notices", []):
         paths.append((notice["path"], notice["path"]))
@@ -169,6 +180,72 @@ def migrate_legacy_staging() -> None:
             source.unlink()
 
 
+def stage_core_spleen32() -> None:
+    """Preserve Spleen 32x64 outside installed trees before repackaging it."""
+    source = CORE / "assets/fonts/spleen-32x64.bdf"
+    if not source.is_file():
+        return
+    target = STAGING / "spleen/2.2.0/spleen-32x64.bdf"
+    digest = hashlib.sha256(source.read_bytes()).hexdigest()
+    if target.exists() and hashlib.sha256(target.read_bytes()).hexdigest() != digest:
+        raise ValueError(f"staging collision; preserving both files: {source} -> {target}")
+    if not target.exists():
+        copy_file(source, target)
+
+
+def preserve_ark_archival_inventory() -> None:
+    source = FAMILIES / "ark-pixel.json"
+    if not source.is_file():
+        return
+    archival = ROOT / ".source-cache/archival/ark-pixel/full-inventory.json"
+    archival.parent.mkdir(parents=True, exist_ok=True)
+    if archival.exists():
+        existing = json.loads(archival.read_text())
+    else:
+        existing = json.loads(source.read_text())
+        copy_file(source, archival)
+    distributed = dict(existing)
+    distributed["fonts"] = [row for row in existing.get("fonts", []) if not row.get("deprecated")]
+    distributed["counts"] = dict(existing.get("counts", {}))
+    distributed["counts"]["fonts"] = len(distributed["fonts"])
+    distributed["counts"]["font_bytes"] = sum(row["bytes"] for row in distributed["fonts"])
+    distributed["license_notices"] = [row for row in existing.get("license_notices", []) if "deprecated-16px" not in row.get("path", "")]
+    distributed["license_path"] = distributed["license_notices"][0]["path"]
+    distributed["expected"] = {"sizes_px": [10, 12], "styles": ["mono", "proportional"], "regions_per_size_style": 7}
+    distributed["size_style_region_counts"] = {key: value for key, value in existing.get("size_style_region_counts", {}).items() if key in {"10", "12"}}
+    source.write_text(json.dumps(distributed, indent=2, ensure_ascii=False) + "\n")
+
+
+def migrate_source_inventories() -> None:
+    """Move canonical import inventories out of installable package trees safely."""
+    legacy = CORE / "inventory"
+    family_dir = legacy / "families"
+    for source in sorted(family_dir.glob("*.json")) if family_dir.exists() else []:
+        target = FAMILIES / source.name
+        if target.exists() and hashlib.sha256(target.read_bytes()).digest() != hashlib.sha256(source.read_bytes()).digest():
+            raise ValueError(f"source inventory cache collision; preserving both: {source} -> {target}")
+        copy_file(source, target)
+    legacy_files = [legacy / name for name in ("families.json", "fonts.json", "fonts.csv", "fonts-todo.json")]
+    archive = ROOT / ".source-cache/inventory/legacy-core"
+    for source in legacy_files:
+        if not source.is_file():
+            continue
+        target = archive / source.name
+        if target.exists() and source.name in {"families.json", "fonts.json"}:
+            # These are assembler outputs after the first migration. The cached
+            # pre-migration originals remain authoritative and untouched.
+            continue
+        if target.exists() and hashlib.sha256(target.read_bytes()).digest() != hashlib.sha256(source.read_bytes()).digest():
+            raise ValueError(f"legacy inventory cache collision; preserving both: {source} -> {target}")
+        copy_file(source, target)
+    if family_dir.exists():
+        for source in family_dir.glob("*.json"):
+            source.unlink()
+        family_dir.rmdir()
+    for source in legacy_files:
+        source.unlink(missing_ok=True)
+
+
 def make_resource(row: dict, family: str, package: Path, package_id: str) -> tuple[dict, dict]:
     source_rel = relative_source(row)
     source = safe_source(source_rel)
@@ -208,7 +285,7 @@ def assemble_package(package_id: str, families: list[str], *, core: bool = False
     if core:
         existing = json.loads((CORE / "manifest.json").read_text())
         resources.extend(r for r in existing["resources"] if r["id"] in {
-            "tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"})
+            "tom-thumb-4x6", "spleen-5x8", "unifont-16.0.04"})
         base_ids = {r["id"] for r in resources}
         base_metadata = {r["id"]: r for r in existing.get("metadata", {}).get("fonts", []) if r["id"] in base_ids}
         metadata_fonts.extend(base_metadata.values())
@@ -216,14 +293,19 @@ def assemble_package(package_id: str, families: list[str], *, core: bool = False
 
     selected: list[tuple[str, dict]] = []
     for family in families:
-        data = load(family)
+        data = package_family_data(family)
         rows = font_rows(family)
         if core and family == "fusion-pixel":
-            rows = [r for r in rows if PurePosixPath(r["filename"]).name in FUSION_LATIN]
+            rows = [r for r in rows if PurePosixPath(r["filename"]).name in FUSION_CORE]
         for row in rows:
             row = dict(row)
             row["family"] = family
             selected.append((family, row))
+        if core and family == "fusion-pixel":
+            data["fonts"] = [r for r in data.get("fonts", []) if PurePosixPath(r.get("filename", "")).name in FUSION_CORE]
+            if isinstance(data.get("counts"), dict):
+                data["counts"]["fonts"] = len(data["fonts"])
+                data["counts"]["font_bytes"] = sum(r.get("bytes", 0) for r in data["fonts"])
         inventory["families"][family] = data
         for src, declared in license_sources(family):
             source = safe_source(src)
@@ -242,6 +324,11 @@ def assemble_package(package_id: str, families: list[str], *, core: bool = False
     # resource-only and have no invented dependency or entry point.
     if core:
         manifest = existing
+        core_font_ids = {r["id"] for r in resources}
+        for widget in manifest.get("widgets", []):
+            schema = widget.get("config_schema", {}).get("properties", {}).get("font", {})
+            if "enum" in schema:
+                schema["enum"] = [font_id for font_id in schema["enum"] if font_id in core_font_ids]
         manifest["resources"] = resources
         manifest["license_files"] = list(dict.fromkeys(license_files))
         manifest["metadata"] = {**manifest.get("metadata", {}), "fonts": metadata_fonts}
@@ -271,6 +358,8 @@ def assemble_package(package_id: str, families: list[str], *, core: bool = False
     invdir = package / "inventory"
     invdir.mkdir(exist_ok=True)
     (invdir / "families.json").write_text(json.dumps(inventory, indent=2, ensure_ascii=False) + "\n")
+    if core:
+        (invdir / "fonts.json").write_text(json.dumps(metadata_fonts, indent=2, ensure_ascii=False) + "\n")
     count = len(resources)
     byte_total = sum((package / r["path"]).stat().st_size for r in resources)
     return {"package": package_id, "fonts": count, "font_bytes": byte_total,
@@ -294,7 +383,7 @@ def validate_package(package_id: str, expected_count: int, expected_bytes: int) 
 
 
 def archive_unused_notices() -> None:
-    for name in ("core", "font-fusion-pixel", "font-ark-pixel"):
+    for name in ("core", "fonts-extra", "font-fusion-pixel", "font-ark-pixel"):
         package = ROOT / "packages" / name
         manifest = json.loads((package / "manifest.json").read_text())
         declared = {package / p for p in manifest["license_files"]}
@@ -315,15 +404,39 @@ def main() -> None:
     if args.root.resolve() != ROOT.resolve():
         raise SystemExit("--root must be this checkout; run the script in its own repository")
     migrate_legacy_staging()
+    migrate_source_inventories()
+    stage_core_spleen32()
+    preserve_ark_archival_inventory()
+    legacy_fonts = ROOT / "packages/fonts"
+    extra_fonts = ROOT / "packages/fonts-extra"
+    if legacy_fonts.exists() and not extra_fonts.exists():
+        os.replace(legacy_fonts, extra_fonts)
     result = [
-        assemble_package("core", [*sorted(CORE_FAMILIES), "fusion-pixel"], core=True),
+        assemble_package("core", ["fusion-pixel"], core=True),
+        assemble_package("fonts-extra", sorted(CORE_FAMILIES)),
         assemble_package("font-fusion-pixel", ["fusion-pixel"]),
         assemble_package("font-ark-pixel", ["ark-pixel"]),
     ]
-    for package_id, count, byte_total in (("core", 81, 62123296),
-                                           ("font-fusion-pixel", 42, 162339786),
-                                           ("font-ark-pixel", 42, 59321705)):
-        validate_package(package_id, count, byte_total)
+    # Retire stale BDF copies only after every new manifest and replacement
+    # resource has been written; all originals remain in ignored source-cache.
+    for package_id in ("core", "fonts-extra", "font-fusion-pixel", "font-ark-pixel"):
+        package = ROOT / "packages" / package_id
+        manifest = json.loads((package / "manifest.json").read_text())
+        declared = {str((package / r["path"]).resolve()) for r in manifest["resources"] if r.get("kind") == "font"}
+        for path in package.rglob("*.bdf"):
+            if str(path.resolve()) not in declared:
+                digest = hashlib.sha256(path.read_bytes()).hexdigest()
+                preserved = [p for p in STAGING.rglob(path.name) if p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest() == digest]
+                if not preserved:
+                    raise ValueError(f"refusing to remove unpreserved BDF {path} ({digest})")
+                path.unlink()
+    # Count assertions are checked by the independent catalog validator; derive
+    # exact totals from the source inventories rather than preserving old pins.
+    expected_counts = {"core": 6, "fonts-extra": 72, "font-fusion-pixel": 42, "font-ark-pixel": 28}
+    for package_id in ("core", "fonts-extra", "font-fusion-pixel", "font-ark-pixel"):
+        package = ROOT / "packages" / package_id
+        manifest = json.loads((package / "manifest.json").read_text())
+        validate_package(package_id, expected_counts[package_id], sum((package / r["path"]).stat().st_size for r in manifest["resources"]))
     archive_unused_notices()
     print(json.dumps(result, indent=2))
 

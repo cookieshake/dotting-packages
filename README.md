@@ -5,14 +5,17 @@ of GitHub ownership. Fonts are original native BDFs, never converted or synthesi
 
 | Package path / ID | BDF entries | Original BDF bytes | Scope |
 | --- | ---: | ---: | --- |
-| `packages/core` / `core` | 81 | 62,123,296 | Core widgets; Tom Thumb, Spleen, Unifont, Tamzen/Powerline, Bitocra/Bitbuntu, Gohu/HiDPI, Scientifica, Galmuri, Misaki, k8x12, and six Fusion Pixel Latin variants |
-| `packages/font-fusion-pixel` / `font-fusion-pixel` | 42 | 162,339,786 | All native 8/10/12px monospaced/proportional regional variants |
-| `packages/font-ark-pixel` / `font-ark-pixel` | 42 | 59,321,705 | Native 10/12px variants plus the official archived 16px release; both release notices retained |
+| `packages/core` / `core` | 6 | 21,029,415 | Text/number/clock widgets; Tom Thumb 4x6, Spleen 5x8, Unifont 16, Fusion Pixel Latin 8/10/12px monospaced only |
+| `packages/fonts-extra` / `fonts-extra` | 72 | 29,494,447 | Remaining English families/styles and Spleen sizes; no core duplicates |
+| `packages/font-fusion-pixel` / `font-fusion-pixel` | 42 | 162,339,786 | Complete 8/10/12px monospaced/proportional regional set |
+| `packages/font-ark-pixel` / `font-ark-pixel` | 28 | 55,872,945 | Current 10/12px monospaced/proportional regional set; deprecated 16px archival assets excluded |
 
-There are 165 entries and 159 unique original SHA-256 hashes. Silver is excluded.
-Ark is a separate resource package, not an addition to core. Every BDF except
-Tom Thumb is Git LFS tracked. Install a pinned hydrated subtree; a Git checkout
-containing LFS pointer text is not runnable.
+There are 148 distributed entries and 145 unique distributed original SHA-256
+hashes. Fourteen deprecated Ark 16px originals and their full source provenance
+remain only in ignored `.source-cache/archival/` and `.source-cache/fonts/`.
+Silver is excluded. Every distributed BDF except Tom Thumb is Git LFS tracked.
+Install a pinned hydrated subtree; a Git checkout containing LFS pointer text
+is not runnable.
 
 ## Catalog assembly and audit
 
@@ -77,7 +80,8 @@ and pure and do not access sources or ambient clocks. The runtime's separate
 `ctx.elapsed` value remains available for deterministic animation widgets but
 is not needed for this wall-clock widget.
 
-Font redistribution notices are included under `packages/core/licenses/`.
+Font redistribution notices are included within the package that ships each
+font; deprecated Ark 16px notice material stays outside installed packages.
 The older core README describes the initial four-font/widget proof slice; the
 manifests and family inventories are authoritative for the expanded catalog.
 Verify uploaded LFS objects through an independent remote readback before

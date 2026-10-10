@@ -295,7 +295,7 @@ def main() -> None:
     for key, outputs, inventory, _ in pending:
         for path, data in outputs:
             write_atomic(path, data)
-        sidecar = ROOT / "packages/core/inventory/families" / f"{key}.json"
+        sidecar = ROOT / ".source-cache/inventory/families" / f"{key}.json"
         write_atomic(sidecar, (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
         for row in inventory["fonts"]:
             print(f"{row['path']}: {row['bytes']} bytes sha256={row['sha256']} glyphs={row['glyph_count']} BBX={row['bbx']} DWIDTH={row['dwidth_values']} coverage={row['coverage_codepoint_count']}")

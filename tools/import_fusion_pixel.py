@@ -281,7 +281,7 @@ def main() -> None:
             "source_release_url": RELEASE_URL,
             "fonts": [row for _, _, row in sorted(staged, key=lambda item: item[2]["path"])],
         }
-        write_atomic(ROOT / "packages/core/inventory/families/fusion-pixel.json", (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+        write_atomic(ROOT / ".source-cache/inventory/families/fusion-pixel.json", (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
         for row in inventory["fonts"]:
             print(f"{row['path']}: {row['bytes']} bytes sha256={row['sha256']} glyphs={row['glyph_count']} BBX={row['bbx']} DWIDTH={row['dwidth_values']} region={row['region']}")
         print(f"license {license_name}: {len(license_data)} bytes sha256={inventory['license_sha256']}")

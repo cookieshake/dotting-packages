@@ -27,7 +27,10 @@ def snapshot():
 
 
 def source_rows(family):
-    data = catalog.load(family)
+    if family == "ark-pixel" and (ROOT / ".source-cache/archival/ark-pixel/full-inventory.json").is_file():
+        data = json.loads((ROOT / ".source-cache/archival/ark-pixel/full-inventory.json").read_text())
+    else:
+        data = catalog.load(family)
     rows = data.get("fonts", data.get("files", []))
     originals = []
     for row in rows:
@@ -125,14 +128,16 @@ def main():
         subprocess.run(["python3", str(ROOT / "tools/assemble_catalog.py")], check=True, capture_output=True)
         assert snapshot() == before, "assembler changed installed bytes on rerun"
     rejected = []
-    for name in validator.EXPECTED:
+    for name in validator.EXPECTED_COUNTS:
         path = ROOT / "packages" / name / "recovery-negative-undeclared.bdf"
         assert not path.exists(), path
         try:
             with path.open("xb") as output:
                 output.write(b"STARTFONT 2.1\nENDFONT\n")
             try:
-                catalog.validate_package(name, *validator.EXPECTED[name][:2])
+                manifest = json.loads((ROOT / "packages" / name / "manifest.json").read_text())
+                byte_count = sum((ROOT / "packages" / name / r["path"]).stat().st_size for r in manifest["resources"])
+                catalog.validate_package(name, validator.EXPECTED_COUNTS[name], byte_count)
             except ValueError as error:
                 assert "undeclared=" in str(error), error
                 rejected.append(name)
@@ -155,13 +160,13 @@ def main():
     parts = proc.stdout.decode().split("\0")[:-1]
     filters = dict((parts[i], parts[i + 2]) for i in range(0, len(parts), 3))
     tom = "packages/core/assets/fonts/tom-thumb-4x6.bdf"
-    assert len(filters) == 165
-    assert filters[tom] == "unspecified", filters[tom]
+    assert len(filters) == 148
+    assert filters[tom] == "unset", filters[tom]
     assert all(value == "lfs" for path, value in filters.items() if path != tom), filters
     with contextlib.redirect_stdout(io.StringIO()) as output:
         validator.validate()
     report = {"assembler_identical_reruns": 2, "negative_undeclared_bdf_rejections": rejected,
-              "importer_replays": results, "lfs": {"bdf_entries": 165, "lfs_entries": 164, "exception": tom},
+              "importer_replays": results, "lfs": {"bdf_entries": 148, "lfs_entries": 147, "exception": tom},
               "validation": output.getvalue().splitlines(), "installed_hashes": before,
               "scope": "offline original-byte importer routing replay; no network downloads or remote LFS object verification"}
     # Preserve earlier proof artifacts on every rerun.

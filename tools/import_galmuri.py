@@ -146,7 +146,7 @@ def main() -> None:
         "source_repository": "https://github.com/quiple/galmuri",
         "source_commit": COMMIT, "fonts": records,
     }
-    write_atomic(ROOT / "packages/core/inventory/families/galmuri.json", (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+    write_atomic(ROOT / ".source-cache/inventory/families/galmuri.json", (json.dumps(inventory, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     for row in records:
         print(f"{row['path']}: {row['bytes']} bytes sha256={row['sha256']} glyphs={row['glyph_count']} bbox={row['bounding_box']}")
     print(f"licenses/galmuri/LICENSE.txt: {len(license_data)} bytes sha256={LICENSE_SHA256}")
