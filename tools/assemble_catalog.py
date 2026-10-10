@@ -47,6 +47,11 @@ def package_family_data(family: str) -> dict:
         data["license_path"] = data["license_notices"][0]["path"]
         data["expected"] = {"sizes_px": [10, 12], "styles": ["mono", "proportional"], "regions_per_size_style": 7}
         data["size_style_region_counts"] = {key: value for key, value in data.get("size_style_region_counts", {}).items() if key in {"10", "12"}}
+        data["archives"] = {name: row for name, row in data.get("archives", {}).items() if "16px" not in name}
+        if isinstance(data.get("counts"), dict):
+            data["counts"]["archives"] = len(data["archives"])
+            data["counts"]["download_bytes"] = sum(row["bytes"] for row in data["archives"].values())
+            data["counts"]["decompressed_bytes"] = sum(row["bytes"] for row in data["fonts"])
     return data
 
 
@@ -213,6 +218,10 @@ def preserve_ark_archival_inventory() -> None:
     distributed["license_path"] = distributed["license_notices"][0]["path"]
     distributed["expected"] = {"sizes_px": [10, 12], "styles": ["mono", "proportional"], "regions_per_size_style": 7}
     distributed["size_style_region_counts"] = {key: value for key, value in existing.get("size_style_region_counts", {}).items() if key in {"10", "12"}}
+    distributed["archives"] = {name: row for name, row in existing.get("archives", {}).items() if "16px" not in name}
+    distributed["counts"]["archives"] = len(distributed["archives"])
+    distributed["counts"]["download_bytes"] = sum(row["bytes"] for row in distributed["archives"].values())
+    distributed["counts"]["decompressed_bytes"] = sum(row["bytes"] for row in distributed["fonts"])
     source.write_text(json.dumps(distributed, indent=2, ensure_ascii=False) + "\n")
 
 

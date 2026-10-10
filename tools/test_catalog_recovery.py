@@ -152,6 +152,15 @@ def main():
                 raise AssertionError("strict validator accepted undeclared BDF")
         finally:
             path.unlink()
+    # An archival Ark source record must not be accepted into any installed
+    # family's metadata even though the original remains in source-cache.
+    archival_ark = json.loads((ROOT / ".source-cache/archival/ark-pixel/full-inventory.json").read_text())
+    try:
+        validator.validate_ark_installed_inventory(archival_ark, "negative-test")
+    except AssertionError as error:
+        assert "archival Ark archive" in str(error), error
+    else:
+        raise AssertionError("installed inventory validator accepted archival Ark source records")
     with tempfile.TemporaryDirectory(prefix="replay-", dir=ROOT / ".source-cache") as temporary:
         results = importer_replays(Path(temporary))
     assert snapshot() == before, "offline importer replay altered installed content"

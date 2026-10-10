@@ -26,8 +26,10 @@ def main():
     parser.add_argument("--index", action="store_true")
     parser.add_argument("--remote-commit")
     parser.add_argument("--binary", type=Path, default=RUNTIME / "target/debug/dotting")
+    parser.add_argument("--timeout-seconds", type=int, default=60)
     args = parser.parse_args()
     assert args.index != bool(args.remote_commit), "choose --index or --remote-commit"
+    assert 1 <= args.timeout_seconds <= 600, "install timeout must be between 1 and 600 seconds"
     proof = Path(tempfile.mkdtemp(prefix="packages-publication-", dir=RUNTIME / "artifacts"))
     commands = []
     def run(argv, cwd=ROOT, env=None, timeout=600):
@@ -106,9 +108,10 @@ def main():
             native_home.mkdir()
             native_env = dict(env, HOME=str(native_home), PATH="")
             run([binary, "app", "install", name, "--repository", REMOTE,
-                 "--commit", args.remote_commit, "--output", output,
-                 "--package-path", "packages/" + name, "--sha256", snapshot,
-                 "--download-audit", audit], env=native_env)
+                  "--commit", args.remote_commit, "--output", output,
+                  "--package-path", "packages/" + name, "--sha256", snapshot,
+                  "--timeout-seconds", args.timeout_seconds,
+                  "--download-audit", audit], env=native_env)
             run([binary, "app", "check", output], env=native_env)
             assert run([binary, "app", "snapshot-hash", output], env=native_env).decode().strip() == snapshot
             manifest = json.loads((output / "manifest.json").read_text())

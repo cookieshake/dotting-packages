@@ -34,11 +34,11 @@
         "regions_per_size_style": 7
       },
       "counts": {
-        "archives": 6,
+        "archives": 4,
         "fonts": 28,
         "font_bytes": 55872945,
-        "download_bytes": 59355171,
-        "decompressed_bytes": 59348323
+        "download_bytes": 55895169,
+        "decompressed_bytes": 55872945
       },
       "size_style_region_counts": {
         "10": {
@@ -152,34 +152,6 @@
             "zh_hans",
             "zh_hant",
             "zh_hk",
-            "zh_tw"
-          ]
-        },
-        "ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip": {
-          "sha256": "c8614876f362660589b6ea002b7ed835f7aaff4aa40556fa6ee8c32c83a605ea",
-          "bytes": 1720120,
-          "font_count": 7,
-          "regions": [
-            "ja",
-            "ko",
-            "latin",
-            "zh_cn",
-            "zh_hk",
-            "zh_tr",
-            "zh_tw"
-          ]
-        },
-        "ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip": {
-          "sha256": "64c5feab290a7001918072ee196820b4d5245f1954070790d27e895efb3490ca",
-          "bytes": 1739882,
-          "font_count": 7,
-          "regions": [
-            "ja",
-            "ko",
-            "latin",
-            "zh_cn",
-            "zh_hk",
-            "zh_tr",
             "zh_tw"
           ]
         }

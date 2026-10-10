@@ -17,6 +17,12 @@ def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def validate_ark_installed_inventory(ark: dict, package_id: str) -> None:
+    assert not any("16px" in name for name in ark.get("archives", {})), (package_id, "archival Ark archive")
+    assert not any(row.get("deprecated") for row in ark.get("fonts", [])), (package_id, "deprecated Ark font")
+    assert ark.get("expected", {}).get("sizes_px") == [10, 12], (package_id, "Ark expected sizes")
+
+
 def capture() -> None:
     if LEDGER.exists():
         raise ValueError("recovery ledger exists; refusing to overwrite earlier proof")
@@ -104,6 +110,11 @@ def validate() -> None:
     archived = [row for row in archival["fonts"] if row.get("deprecated")]
     assert len(archived) == 14 and all(row["sha256"] not in all_hashes for row in archived)
     assert not any("16px" in str(p) for p in (ROOT / "packages").rglob("*.bdf"))
+    for package_id in EXPECTED_COUNTS:
+        package_inventory = json.loads((ROOT / "packages" / package_id / "inventory/families.json").read_text())
+        ark = package_inventory.get("families", {}).get("ark-pixel")
+        if ark:
+            validate_ark_installed_inventory(ark, package_id)
     if LEDGER.exists():
         # Every pre-recovery original BDF and notice survives byte-for-byte.
         preserved = {sha(p) for base in (ROOT / "packages", ROOT / ".source-cache")
