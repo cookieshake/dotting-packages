@@ -89,6 +89,9 @@ def main():
               "ordinary_Git_blob_bytes": normal_bytes, "largest_ordinary_blobs": sorted(largest, reverse=True)[:5]}
     (proof / "report.json").write_text(json.dumps(report, indent=2) + "\n")
     if args.remote_commit:
+        # The isolated HOME intentionally has no global LFS filter setup.
+        # Configure this throwaway clone only so pull also hydrates its checkout.
+        run(["git", "lfs", "install", "--local"], cwd=repo, env=env)
         run(["git", "lfs", "pull"], cwd=repo, env=env)
         run(["git", "lfs", "fsck"], cwd=repo, env=env)
         for path, row in objects.items():
