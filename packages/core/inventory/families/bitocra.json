@@ -1,0 +1,226 @@
+{
+  "family": "bitocra",
+  "files": [
+    {
+      "ascent": 5,
+      "bytes": 9266,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "4 0",
+      "descent": 0,
+      "encoding_count": 95,
+      "encoding_max": 126,
+      "encoding_min": 32,
+      "font_bounding_box": "4 4 0 0",
+      "font_name": "-aaron-4thD-Medium-R-Normal--4-40-86-86-C-30-ISO8859-1",
+      "glyph_count": 95,
+      "glyph_width_variants": [
+        "4 0"
+      ],
+      "id": "fonts-bitocra-4thd",
+      "path": "packages/core/fonts/bitocra/4thD.bdf",
+      "sha256": "d6b720ce2f4dc45e47e06e31d06a82b17105c253b4e45028773890f83057faf0",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/4thD.bdf",
+      "status": "imported",
+      "upstream_path": "4thD.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 5,
+      "bytes": 9563,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "4 0",
+      "descent": 0,
+      "encoding_count": 95,
+      "encoding_max": 126,
+      "encoding_min": 32,
+      "font_bounding_box": "4 5 0 0",
+      "font_name": "-aaron-5thElement-Medium-R-Normal--5-40-86-86-C-30-ISO8859-1",
+      "glyph_count": 95,
+      "glyph_width_variants": [
+        "4 0"
+      ],
+      "id": "fonts-bitocra-5thelement",
+      "path": "packages/core/fonts/bitocra/5thElement.bdf",
+      "sha256": "2b7f6a85a65ec00bd0e8e65e009e6804b7c748adfe490521294c9d2418781d9c",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/5thElement.bdf",
+      "status": "imported",
+      "upstream_path": "5thElement.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 8,
+      "bytes": 51438,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "6 0",
+      "descent": 2,
+      "encoding_count": 443,
+      "encoding_max": 64334,
+      "encoding_min": 32,
+      "font_bounding_box": "6 10 0 -2",
+      "font_name": "-aaron-bitbuntufull-medium-r-normal--10-100-72-72-C-90-UTF8-1",
+      "glyph_count": 443,
+      "glyph_width_variants": [
+        "6 0"
+      ],
+      "id": "fonts-bitocra-bitbuntu-full",
+      "path": "packages/core/fonts/bitocra/bitbuntu-full.bdf",
+      "sha256": "6fbf83b92a1fca0827c0ba128454837fbd74e07eca5e34ca85c23e9a24563069",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitbuntu-full.bdf",
+      "status": "preserved-existing",
+      "upstream_path": "bitbuntu-full.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 8,
+      "bytes": 19791,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "6 0",
+      "descent": 2,
+      "encoding_count": 190,
+      "encoding_max": 255,
+      "encoding_min": 32,
+      "font_bounding_box": "7 11 0 -2",
+      "font_name": "-aaron-bitbuntu-medium-r-normal--10-100-72-72-C-90-iSO8859-1",
+      "glyph_count": 190,
+      "glyph_width_variants": [
+        "6 0"
+      ],
+      "id": "fonts-bitocra-bitbuntu",
+      "path": "packages/core/fonts/bitocra/bitbuntu.bdf",
+      "sha256": "ede56204dca9a149288f58f87708ff4ca8e2669ace7c4c27c1a5aa1c0f5a8b43",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitbuntu.bdf",
+      "status": "preserved-existing",
+      "upstream_path": "bitbuntu.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 11,
+      "bytes": 34814,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "7 0",
+      "descent": 2,
+      "encoding_count": 277,
+      "encoding_max": 64331,
+      "encoding_min": 32,
+      "font_bounding_box": "7 13 0 -2",
+      "font_name": "-aaron-bitocra13full-Medium-R-Normal--13-130-84-84-C-90-ISO8859-1",
+      "glyph_count": 277,
+      "glyph_width_variants": [
+        "7 0"
+      ],
+      "id": "fonts-bitocra-bitocra-13-full",
+      "path": "packages/core/fonts/bitocra/bitocra-13-full.bdf",
+      "sha256": "cdd33e440467b26d3abdda0b1666beed7fd5a96f87ef0a48897391caa8635fc7",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra-13-full.bdf",
+      "status": "imported",
+      "upstream_path": "bitocra-13-full.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 11,
+      "bytes": 23778,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "7 0",
+      "descent": 2,
+      "encoding_count": 189,
+      "encoding_max": 255,
+      "encoding_min": 32,
+      "font_bounding_box": "7 13 0 -2",
+      "font_name": "-aaron-bitocra13-Medium-R-Normal--13-130-84-84-C-90-ISO8859-1",
+      "glyph_count": 189,
+      "glyph_width_variants": [
+        "7 0"
+      ],
+      "id": "fonts-bitocra-bitocra-13",
+      "path": "packages/core/fonts/bitocra/bitocra-13.bdf",
+      "sha256": "31c4499baec1d5f881a53b15ed5c293c4a118bf3e97a99d6b1d672e836f8ad75",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra-13.bdf",
+      "status": "imported",
+      "upstream_path": "bitocra-13.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 8,
+      "bytes": 54085,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "6 0",
+      "descent": 2,
+      "encoding_count": 455,
+      "encoding_max": 64334,
+      "encoding_min": 32,
+      "font_bounding_box": "6 11 0 -2",
+      "font_name": "-aaron-bitocrafull-medium-r-normal--11-100-72-72-M-90-ISO10646-1",
+      "glyph_count": 455,
+      "glyph_width_variants": [
+        "6 0"
+      ],
+      "id": "fonts-bitocra-bitocra-full",
+      "path": "packages/core/fonts/bitocra/bitocra-full.bdf",
+      "sha256": "8c16ed4673573e6eb8723911be54a6aa239fdd69ceec5c2fa8166f8dc313fbc5",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra-full.bdf",
+      "status": "imported",
+      "upstream_path": "bitocra-full.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 8,
+      "bytes": 19750,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "6 0",
+      "descent": 2,
+      "encoding_count": 190,
+      "encoding_max": 255,
+      "encoding_min": 32,
+      "font_bounding_box": "6 11 0 -2",
+      "font_name": "-aaron-bitocra-medium-r-normal--11-100-72-72-M-90-ISO8859-1",
+      "glyph_count": 190,
+      "glyph_width_variants": [
+        "6 0"
+      ],
+      "id": "fonts-bitocra-bitocra",
+      "path": "packages/core/fonts/bitocra/bitocra.bdf",
+      "sha256": "1408557f341b937adcf8eca5d96510bdd3711b5555b1c6b8fcf3b8a1c38a18b7",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra.bdf",
+      "status": "imported",
+      "upstream_path": "bitocra.bdf",
+      "version": "master"
+    },
+    {
+      "ascent": 6,
+      "bytes": 19663,
+      "coverage": "native-BDF-encoding-inventory",
+      "default_width": "4 0",
+      "descent": 1,
+      "encoding_count": 192,
+      "encoding_max": 255,
+      "encoding_min": 0,
+      "font_bounding_box": "4 7 0 -1",
+      "font_name": "-aaron-bitocra7-Medium-R-Normal--7-60-75-75-C-40-ISO8859-1",
+      "glyph_count": 192,
+      "glyph_width_variants": [
+        "4 0"
+      ],
+      "id": "fonts-bitocra-bitocra7",
+      "path": "packages/core/fonts/bitocra/bitocra7.bdf",
+      "sha256": "ee4b7bc64bf6bc4b19757493af84b110cbf78cd5f66be7db459c799d50858967",
+      "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra7.bdf",
+      "status": "imported",
+      "upstream_path": "bitocra7.bdf",
+      "version": "master"
+    }
+  ],
+  "license": {
+    "bytes": 4414,
+    "sha256": "fd6673afbd26ab5db23a47575d622816eb6103c4cb8224af7eaa2a1d41b163dd",
+    "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/LICENSE",
+    "status": "captured"
+  },
+  "missing_or_unresolved": [],
+  "repository": "ninjaaron/bitocra",
+  "requested_file_pattern": ".*\\.bdf$",
+  "source": {
+    "revision": "master",
+    "truncated": false
+  },
+  "status": "complete"
+}

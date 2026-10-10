@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch and inventory four pinned BDFs; never convert font formats."""
+"""Fetch and inventory pinned native BDFs; never convert font formats."""
 
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+STAGING_ROOT = ROOT / ".source-cache/fonts"
 MAX_DOWNLOAD = 128 * 1024
 RUNTIME_ROOT = ROOT.parent / "dotting"
 SOURCES = (
@@ -54,6 +55,58 @@ SOURCES = (
         "bbox": "32 64 0 -12",
         "ascent": 52,
         "descent": 12,
+        "glyphs": 978,
+    },
+    {
+        "id": "fonts-spleen-6x12-latin",
+        "path": ".source-cache/fonts/spleen/2.2.0/spleen-6x12.bdf",
+        "url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-6x12.bdf",
+        "version": "2.2.0",
+        "sha256": "fc0743d164690f99b7e2e1b9d503180e4c719a9831ae03fd8f6da18c857dee27",
+        "license": "BSD-2-Clause",
+        "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "bbox": "6 12 0 -3",
+        "ascent": 9,
+        "descent": 3,
+        "glyphs": 548,
+    },
+    {
+        "id": "fonts-spleen-8x16-latin",
+        "path": ".source-cache/fonts/spleen/2.2.0/spleen-8x16.bdf",
+        "url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-8x16.bdf",
+        "version": "2.2.0",
+        "sha256": "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae",
+        "license": "BSD-2-Clause",
+        "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "bbox": "8 16 0 -4",
+        "ascent": 12,
+        "descent": 4,
+        "glyphs": 978,
+    },
+    {
+        "id": "fonts-spleen-12x24-latin",
+        "path": ".source-cache/fonts/spleen/2.2.0/spleen-12x24.bdf",
+        "url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-12x24.bdf",
+        "version": "2.2.0",
+        "sha256": "181989f2c5f47b34c2474cd424b387b0002aa77fc970e59ee31e16733af24687",
+        "license": "BSD-2-Clause",
+        "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "bbox": "12 24 0 -5",
+        "ascent": 19,
+        "descent": 5,
+        "glyphs": 926,
+    },
+    {
+        "id": "fonts-spleen-16x32-latin",
+        "path": ".source-cache/fonts/spleen/2.2.0/spleen-16x32.bdf",
+        "url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/spleen-16x32.bdf",
+        "version": "2.2.0",
+        "sha256": "f6db2549d46c5699ceca7ccc26e747c8bdad3af76239f86aae6ed995bd2f3d37",
+        "license": "BSD-2-Clause",
+        "license_url": "https://raw.githubusercontent.com/fcambus/spleen/2.2.0/LICENSE",
+        "bbox": "16 32 0 -6",
+        "ascent": 26,
+        "descent": 6,
         "glyphs": 978,
     },
     {
@@ -176,7 +229,9 @@ def main() -> None:
         inventory.append(
             {
                 "id": spec["id"],
-                "path": str(Path(str(spec["path"])).relative_to("packages/core")),
+                "path": ("fonts/" + str(Path(str(spec["path"])).relative_to(".source-cache/fonts"))
+                         if str(spec["path"]).startswith(".source-cache/fonts/")
+                         else str(Path(str(spec["path"])).relative_to("packages/core"))),
                 "version": spec["version"],
                 "source_url": spec["url"],
                 "license_url": spec["license_url"],

@@ -1,0 +1,699 @@
+{
+  "id": "font-fusion-pixel",
+  "version": "0.1.0",
+  "sdk": {
+    "min": "1.0.0",
+    "max": "1.0.0"
+  },
+  "license": "SEE LICENSE FILES",
+  "provenance": {
+    "source": "Original BDF assets and family provenance in inventory/families"
+  },
+  "license_files": [
+    "licenses/fusion-pixel/OFL.txt",
+    "licenses/fusion-pixel/third-party/ark-pixel/OFL.txt",
+    "licenses/fusion-pixel/third-party/boutique-bitmap-7x7/OFL.txt",
+    "licenses/fusion-pixel/third-party/boutique-bitmap-9x9/OFL.txt",
+    "licenses/fusion-pixel/third-party/cubic-11/OFL.txt",
+    "licenses/fusion-pixel/third-party/galmuri/LICENSE.txt",
+    "licenses/fusion-pixel/third-party/miseki-bitmap/LICENSE.txt"
+  ],
+  "resources": [
+    {
+      "id": "fonts-fusion-pixel-10-mono-aba0d3e12879",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 f40bda3bfc07a77367515bf9c73c4ebde22b1f7704731a3fcb649ada96dfbeab"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-d47fcbe6a777",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 2e2b3fbbe527e68d0eee966bedbf696a8d6b4bb1ab9f8a5aaa8c296c04937660"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-e71b599d29d3",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 08370d01062f25361ed1982d9c3150d1a7e5592743795851ed8c1f62570dcc5a"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-f778e0cb92d9",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 08f9ccc3866282137c8b1f56697c0a4d12fb367b34b0f7ad17f4608cc1ae515d"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-4134b67e0ac4",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 62dde41fd1b8e78139c36eddabdcce0f531763354370a11ced68c0083dbc928e"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-9cb2c94f53c5",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 3cdfd8a6c2ef84b6b75c7221ced703b7c757a9558ff02ecd52f6c34efc9bc93e"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-3e8b51219ab5",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9a8a592d2742f28bf3e201a9fbee442822abf82ed074e4b4bb28cd1c99dca75b"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-88298bd3ee43",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9cfc62525e482a7d484c3b0e06e36da5cbe8395aad76812287ccc1c5f3e0d8f2"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-85c9324c95c3",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 329ddee6b974a5f1d810c3b4a55d22cc29bf6799e41d3887857042299cf07eef"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-d547a71297b9",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9b4d7981be79e3af1eb28b747d6ed801a815e827c0e020a0daab39f0f4d97c70"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-30295c116b26",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9574234e520f8edd91587caed224c9705540c38349844198e12443155215d456"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-0ca5f0cbbc26",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 876706a92949ecf2688706ca9f556ee6a38403f8121562aa05e7fef740e8043e"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-b1bb9d68d24e",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 31fa3f01fe627430f08ba4e811e330f3ef5f755b783c9c75a2c1b12dbe84221c"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-17d1ad9ee66f",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 6ae38089e9e0229a5b6af8e5c49f4a02a50d3f879e160fc66da3c078224b2dd9"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-2a486ca09e95",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 739f5f566f4be6db05d91e5191e2d5405cda2496dabb1b2c53318c55e910589b"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-4e6b76b139d5",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 5afc0f090aa3386950fe50e9f41af7afbe7bdbbe0e6fc112a1028e65a222b464"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-6b2a5a087d97",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 b3e1f71acb4bb1391e3d5f01b87d9ac6d7d86f2d0a92b1008254dd6e3c620d3e"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-0bf2fd41b829",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 bb2cdfa029674d83ad9fc6b01bba11752f61779cae1219a722c7ccee96b2d0ae"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-8bd93cbf17b3",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 f913c71ed284b57988f79d54c9e1955473b54ddd75e96fcc0117027a2a7bf2fd"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-dc52214f22ae",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 5e4e477b3ff5b1984b9d83b1213c9151c4e9e0c1480f5b5ca86989649b44be80"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-8c2732e01e76",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 0227756b88260847242cf052bfd517cce9e4846e538563c291191329caf4c1c4"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-b6a7850a9b0c",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 148afd39504cbd63f7d95f16f21883c03fdcfb1b77c06c097f34997c0b419d9d"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-013bd395c067",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 02ff324a75c457189308b8464f66ab445bc4b5dc2dedecf87b0366de4a29080b"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-1a4cb7aed603",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 4f25284618eb48f6470b7dbc42a88d7aa824a35c82e80a2d9ba83171bdf667ad"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-309c422bb1cb",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9d69fe7a51e928dbb0689a70bed8eec28666713d8c57410fba0f0aa69c0005c6"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-e1f9dafafd4c",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 0d643e1ba08405a196950dd16f5f92219b25e453e811aba2cb6b57ad40f5479d"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-7cb99fb76ced",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 e1eb4fd5ed8375930118838523cbd210483d57bcc04a88009aa80821957725dc"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-60e2e02d0618",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 00f553b4a833533dbf397ded535b769672d86df29cefb8d1719eb7cf34e04ae6"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-b91a84507731",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 f830f783f2f4bd05ab72841352c37dc2229b2fc4f764ce93cdc4c5c391152bdc"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-b4e34c1a004c",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 bb84d938de55d97fad36dd0d7ceed5b53af91f1bbe3e0a678ff6900aa53def48"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-e4e1a8b5cf7f",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 7312455cbd2839d27ea1ff3203809311bced49a9efbe6bf2a45cf9067524fc57"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-3242da5f85f4",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 3c00ccab762c0c75967eea724f5cd57feb544be7a0814d06233160ef9482a50b"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-4df0b20cf791",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 ef42f068504833b4f8ed8db78ef6eda7d162e8315308362d37de78001a725467"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-13c0f5cf6c1e",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 91e094feed2f6539cfd4b94ca28becaa6159b526524f73917153138751508787"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-1cc5015e10da",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 b1c9970aaaaaedf8a6b986ec23af84c2f83dcdefee122b630bacea0ea3f62e42"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-a295bcf242d3",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 b92f794fd17942fbedcf2aae737963393ccb85c0ffd7c2a2642415db8fd8c649"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-eb7794320cc6",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 adb122709def0782732c362dc7f303ea01fe1213dc10f5d91adcb1f988ddd4e5"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-65d8abeb78e0",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 1497782318b3336dcef15b42b87cf112724a014bdf7572928c007af92b0cdd69"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-00535296cb15",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 808381fc0b87d81745f7254674809d33b97e25a91415b9925a9d5c798d188767"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-0c8e5b9e25a5",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9d37b7194be76c4dd970cd97fc267dadfe5df4679641a7c109e91d2cd3f7cd28"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-42404a817b22",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 39c4f3e46af6775af7492b77f8a38d61cf3b96c163a6e7d9b853bce2f404d5ac"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-76f36c499327",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 92ca682eed086b8ae0ffa9a2bce51a6c8b395560420202a7525304a0430286e9"
+    }
+  ],
+  "metadata": {
+    "fonts": [
+      {
+        "bytes": 3273591,
+        "sha256": "f40bda3bfc07a77367515bf9c73c4ebde22b1f7704731a3fcb649ada96dfbeab",
+        "id": "fonts-fusion-pixel-10-mono-aba0d3e12879",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3245618,
+        "sha256": "2e2b3fbbe527e68d0eee966bedbf696a8d6b4bb1ab9f8a5aaa8c296c04937660",
+        "id": "fonts-fusion-pixel-10-mono-d47fcbe6a777",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3273094,
+        "sha256": "08370d01062f25361ed1982d9c3150d1a7e5592743795851ed8c1f62570dcc5a",
+        "id": "fonts-fusion-pixel-10-mono-e71b599d29d3",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3274861,
+        "sha256": "08f9ccc3866282137c8b1f56697c0a4d12fb367b34b0f7ad17f4608cc1ae515d",
+        "id": "fonts-fusion-pixel-10-mono-f778e0cb92d9",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3273931,
+        "sha256": "62dde41fd1b8e78139c36eddabdcce0f531763354370a11ced68c0083dbc928e",
+        "id": "fonts-fusion-pixel-10-mono-4134b67e0ac4",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3273500,
+        "sha256": "3cdfd8a6c2ef84b6b75c7221ced703b7c757a9558ff02ecd52f6c34efc9bc93e",
+        "id": "fonts-fusion-pixel-10-mono-9cb2c94f53c5",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3273584,
+        "sha256": "9a8a592d2742f28bf3e201a9fbee442822abf82ed074e4b4bb28cd1c99dca75b",
+        "id": "fonts-fusion-pixel-10-mono-3e8b51219ab5",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3302216,
+        "sha256": "9cfc62525e482a7d484c3b0e06e36da5cbe8395aad76812287ccc1c5f3e0d8f2",
+        "id": "fonts-fusion-pixel-10-proportional-88298bd3ee43",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3274243,
+        "sha256": "329ddee6b974a5f1d810c3b4a55d22cc29bf6799e41d3887857042299cf07eef",
+        "id": "fonts-fusion-pixel-10-proportional-85c9324c95c3",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3301719,
+        "sha256": "9b4d7981be79e3af1eb28b747d6ed801a815e827c0e020a0daab39f0f4d97c70",
+        "id": "fonts-fusion-pixel-10-proportional-d547a71297b9",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3303486,
+        "sha256": "9574234e520f8edd91587caed224c9705540c38349844198e12443155215d456",
+        "id": "fonts-fusion-pixel-10-proportional-30295c116b26",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3302556,
+        "sha256": "876706a92949ecf2688706ca9f556ee6a38403f8121562aa05e7fef740e8043e",
+        "id": "fonts-fusion-pixel-10-proportional-0ca5f0cbbc26",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3302125,
+        "sha256": "31fa3f01fe627430f08ba4e811e330f3ef5f755b783c9c75a2c1b12dbe84221c",
+        "id": "fonts-fusion-pixel-10-proportional-b1bb9d68d24e",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3302209,
+        "sha256": "6ae38089e9e0229a5b6af8e5c49f4a02a50d3f879e160fc66da3c078224b2dd9",
+        "id": "fonts-fusion-pixel-10-proportional-17d1ad9ee66f",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5224219,
+        "sha256": "739f5f566f4be6db05d91e5191e2d5405cda2496dabb1b2c53318c55e910589b",
+        "id": "fonts-fusion-pixel-12-mono-2a486ca09e95",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5224050,
+        "sha256": "5afc0f090aa3386950fe50e9f41af7afbe7bdbbe0e6fc112a1028e65a222b464",
+        "id": "fonts-fusion-pixel-12-mono-4e6b76b139d5",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5197120,
+        "sha256": "b3e1f71acb4bb1391e3d5f01b87d9ac6d7d86f2d0a92b1008254dd6e3c620d3e",
+        "id": "fonts-fusion-pixel-12-mono-6b2a5a087d97",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5207301,
+        "sha256": "bb2cdfa029674d83ad9fc6b01bba11752f61779cae1219a722c7ccee96b2d0ae",
+        "id": "fonts-fusion-pixel-12-mono-0bf2fd41b829",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5237671,
+        "sha256": "f913c71ed284b57988f79d54c9e1955473b54ddd75e96fcc0117027a2a7bf2fd",
+        "id": "fonts-fusion-pixel-12-mono-8bd93cbf17b3",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5216054,
+        "sha256": "5e4e477b3ff5b1984b9d83b1213c9151c4e9e0c1480f5b5ca86989649b44be80",
+        "id": "fonts-fusion-pixel-12-mono-dc52214f22ae",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5219507,
+        "sha256": "0227756b88260847242cf052bfd517cce9e4846e538563c291191329caf4c1c4",
+        "id": "fonts-fusion-pixel-12-mono-8c2732e01e76",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5228905,
+        "sha256": "148afd39504cbd63f7d95f16f21883c03fdcfb1b77c06c097f34997c0b419d9d",
+        "id": "fonts-fusion-pixel-12-proportional-b6a7850a9b0c",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5228735,
+        "sha256": "02ff324a75c457189308b8464f66ab445bc4b5dc2dedecf87b0366de4a29080b",
+        "id": "fonts-fusion-pixel-12-proportional-013bd395c067",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5201807,
+        "sha256": "4f25284618eb48f6470b7dbc42a88d7aa824a35c82e80a2d9ba83171bdf667ad",
+        "id": "fonts-fusion-pixel-12-proportional-1a4cb7aed603",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5211988,
+        "sha256": "9d69fe7a51e928dbb0689a70bed8eec28666713d8c57410fba0f0aa69c0005c6",
+        "id": "fonts-fusion-pixel-12-proportional-309c422bb1cb",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5242357,
+        "sha256": "0d643e1ba08405a196950dd16f5f92219b25e453e811aba2cb6b57ad40f5479d",
+        "id": "fonts-fusion-pixel-12-proportional-e1f9dafafd4c",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5220742,
+        "sha256": "e1eb4fd5ed8375930118838523cbd210483d57bcc04a88009aa80821957725dc",
+        "id": "fonts-fusion-pixel-12-proportional-7cb99fb76ced",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5224195,
+        "sha256": "00f553b4a833533dbf397ded535b769672d86df29cefb8d1719eb7cf34e04ae6",
+        "id": "fonts-fusion-pixel-12-proportional-60e2e02d0618",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095674,
+        "sha256": "f830f783f2f4bd05ab72841352c37dc2229b2fc4f764ce93cdc4c5c391152bdc",
+        "id": "fonts-fusion-pixel-8-mono-b91a84507731",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3063913,
+        "sha256": "bb84d938de55d97fad36dd0d7ceed5b53af91f1bbe3e0a678ff6900aa53def48",
+        "id": "fonts-fusion-pixel-8-mono-b4e34c1a004c",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095892,
+        "sha256": "7312455cbd2839d27ea1ff3203809311bced49a9efbe6bf2a45cf9067524fc57",
+        "id": "fonts-fusion-pixel-8-mono-e4e1a8b5cf7f",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095936,
+        "sha256": "3c00ccab762c0c75967eea724f5cd57feb544be7a0814d06233160ef9482a50b",
+        "id": "fonts-fusion-pixel-8-mono-3242da5f85f4",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095918,
+        "sha256": "ef42f068504833b4f8ed8db78ef6eda7d162e8315308362d37de78001a725467",
+        "id": "fonts-fusion-pixel-8-mono-4df0b20cf791",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095906,
+        "sha256": "91e094feed2f6539cfd4b94ca28becaa6159b526524f73917153138751508787",
+        "id": "fonts-fusion-pixel-8-mono-13c0f5cf6c1e",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095906,
+        "sha256": "b1c9970aaaaaedf8a6b986ec23af84c2f83dcdefee122b630bacea0ea3f62e42",
+        "id": "fonts-fusion-pixel-8-mono-1cc5015e10da",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095690,
+        "sha256": "b92f794fd17942fbedcf2aae737963393ccb85c0ffd7c2a2642415db8fd8c649",
+        "id": "fonts-fusion-pixel-8-proportional-a295bcf242d3",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3063929,
+        "sha256": "adb122709def0782732c362dc7f303ea01fe1213dc10f5d91adcb1f988ddd4e5",
+        "id": "fonts-fusion-pixel-8-proportional-eb7794320cc6",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095908,
+        "sha256": "1497782318b3336dcef15b42b87cf112724a014bdf7572928c007af92b0cdd69",
+        "id": "fonts-fusion-pixel-8-proportional-65d8abeb78e0",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095952,
+        "sha256": "808381fc0b87d81745f7254674809d33b97e25a91415b9925a9d5c798d188767",
+        "id": "fonts-fusion-pixel-8-proportional-00535296cb15",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095934,
+        "sha256": "9d37b7194be76c4dd970cd97fc267dadfe5df4679641a7c109e91d2cd3f7cd28",
+        "id": "fonts-fusion-pixel-8-proportional-0c8e5b9e25a5",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095922,
+        "sha256": "39c4f3e46af6775af7492b77f8a38d61cf3b96c163a6e7d9b853bce2f404d5ac",
+        "id": "fonts-fusion-pixel-8-proportional-42404a817b22",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095922,
+        "sha256": "92ca682eed086b8ae0ffa9a2bce51a6c8b395560420202a7525304a0430286e9",
+        "id": "fonts-fusion-pixel-8-proportional-76f36c499327",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "id": "font-ark-pixel",
+  "version": "0.1.0",
+  "sdk": {
+    "min": "1.0.0",
+    "max": "1.0.0"
+  },
+  "license": "SEE LICENSE FILES",
+  "provenance": {
+    "source": "Original BDF assets and family provenance in inventory/families"
+  },
+  "license_files": [
+    "licenses/ark-pixel/OFL.txt",
+    "licenses/ark-pixel/deprecated-16px/OFL.txt"
+  ],
+  "resources": [
+    {
+      "id": "fonts-ark-pixel-10-mono-ja",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 9b33e5d30f341ed20f95cd9a9306a246aab91f6d1a52224f03ee076bfb04138c"
+    },
+    {
+      "id": "fonts-ark-pixel-10-mono-ko",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 5da9fbe934ae4d9d3f50e07bb264cfd0b728eadf2a0bcb7880f1d80167d2d8c3"
+    },
+    {
+      "id": "fonts-ark-pixel-10-mono-latin",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 348371cd502bd7e194c504541f08341ea84d6121ee3ed5e045e223cc0ab3bdd3"
+    },
+    {
+      "id": "fonts-ark-pixel-10-mono-zh_hans",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 452118a8818d94f03281ad7fc52275538dc071c524b78272f3f70c3aacb72788"
+    },
+    {
+      "id": "fonts-ark-pixel-10-mono-zh_hant",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 3b78934d1952bac7d218d99c10606c6a8aa4d1c2052bbbba2ce719d06d24483e"
+    },
+    {
+      "id": "fonts-ark-pixel-10-mono-zh_hk",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 89eebb7bb48869e0ac2e261cde7f878ab227dad6e7f3f6a5474684359639843a"
+    },
+    {
+      "id": "fonts-ark-pixel-10-mono-zh_tw",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 d7bd3d516f54b88e525ed702575820a7dae3852c70759af6b425e9e23f48bb10"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-ja",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 23c0fe22f0b760d739a3646606ebad40642cabd0370b7b767e8aa0c5188fde9c"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-ko",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 7342ff410309ca4f8ae7b2a64a1cc6b3456cabd435c451b79ee9986ea9b6739a"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-latin",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 4814c0f89ac71ecb18075ce6b89d500a6282092da26c66d3568faae48c42d904"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-zh_hans",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 a13c8b0acbb00c2a0599949ad369ae3f45662b2e38c7e6d6230a9bfe035f678e"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-zh_hant",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 9ed5e80b2decd658b84bd7f5c956c448dcf830ef05fd41faa966d6aa1f511fbe"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-zh_hk",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 a3874ba81094c49b29f511ce5c55f2fdd81a45bfcbb8294f4d1181c54cc3c179"
+    },
+    {
+      "id": "fonts-ark-pixel-10-proportional-zh_tw",
+      "kind": "font",
+      "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 45f05fb7bdfcbebb23bb47b39eccf148165a4bdda633fdc261293ff84b5d84e8"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-ja",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 44ff065b4bd16d1258a17bbfdb5ffc2e5f8e8d5fd08c6822301f91dd75898d15"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-ko",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 3e580eb38c32c647802911dded5db636bef9e2c4984434625c9fdc28929e5809"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-latin",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 f2cdf6be6ffb08295e174c761d7865f5b1bcdbec916971720219861b10191a63"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-zh_hans",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 ad63c5b8fff51fe8b00cace8ae7a13c6a48a1e61a52d12b4e1af36febc1988c8"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-zh_hant",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 a4dd291797f51c2f5fd8688c02a36d7b98b308324b8311469def98ae5db60038"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-zh_hk",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 3dc0d91c7908239a25a79f14666e66277e0a55d9bb88d64677a562fb7f8d22d4"
+    },
+    {
+      "id": "fonts-ark-pixel-12-mono-zh_tw",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 8a7be8f01fae60824a922116294e6efabcd3ebe6c106aaa535d492279fad407b"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-ja",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 3262e45c88d7c7d1c9594762413c3b4ac2e10656fa2a35cf098b3c2ebeb59b35"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-ko",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 e993cba97b7e1d1e8b601d27996d0632ad7952c8445805f37f0cc7c72ab364fd"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-latin",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 dba7e67cc1812323e84e394ca8998c9ee84be79107fedf317b85c50dd1915bc5"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-zh_hans",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_hans.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 535f70249c7c238963e1cb83b04644886a674cb5be2e316660cda66e20ae8c86"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-zh_hant",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_hant.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 256c1d0e6d860444cd460a67dfbe3404cbca43367a01b4c14fd1e5e29c526094"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-zh_hk",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 c50b7b6324d1b8615b070c33fd2f197e600fc366f9f8f0665c87f2e6010cecce"
+    },
+    {
+      "id": "fonts-ark-pixel-12-proportional-zh_tw",
+      "kind": "font",
+      "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 d82b09f1b0ba6a3f7f3ecee10793003f98d502bdf2300a2e082103ab987f1097"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-ja-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 7d4b80c425b45a2526c17dfb089c67d72d9abf9d9a9e715e5774a125cfbc2c3d"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-ko-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 6a88f101b04c0d120625c205afa8d89dfad3bb83a04da2e544190ce3cd73dca8"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-latin-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 6a337d53e772be3018e80c69601ba246b46f1b883d7e19af801277fe243a834c"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-zh_cn-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_cn.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 90272ce0178ca8c4dd9ad016cde5dad0802b95f0fafad5313caa0671516c659e"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-zh_hk-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 4afd365a22e8b1f9a479580c13acfed130348f383bd90dddf01ea6c259b32797"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-zh_tr-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_tr.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 d92f8c987d055471d6a1cef7b2e006b43a3c80567129eed693097240b242eb33"
+    },
+    {
+      "id": "fonts-ark-pixel-16-mono-zh_tw-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 39a477901445e8a6e2ee1085a2abcc83c14bd23b3ef42da3d252c801d6c9714f"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-ja-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-ja.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 6575f4d94303e71b8ff9c342cb5e23c025421bc4ce3d049da20f0abe90113b68"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-ko-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-ko.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 6708ccbd3232c688fc876e5734717cf5e41ed608739224d95348be478169cb7a"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-latin-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 46ca35dc172a4b0379911a99f84ef0ab186b4ee5133845be7b74005e53932464"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-zh_cn-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_cn.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 c2877c2272f3d307ff5e39f5cfad563efa4d845e600227b80ef543c683a767b5"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-zh_hk-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_hk.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 e02140c5253a23045e28931739956148e30c317d995de57ad0e06b2a8009cbe5"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-zh_tr-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_tr.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 38fcd0763139448de467e0c1f12b771b8ff3ec0eac995c2d3d2e4991c37c3519"
+    },
+    {
+      "id": "fonts-ark-pixel-16-proportional-zh_tw-deprecated16",
+      "kind": "font",
+      "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_tw.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Ark Pixel; original BDF SHA-256 6f50ff769e7b3da8f48953de866575312945153fd1192899f2a0d4d4bec4e31e"
+    }
+  ],
+  "metadata": {
+    "fonts": [
+      {
+        "bytes": 485252,
+        "sha256": "9b33e5d30f341ed20f95cd9a9306a246aab91f6d1a52224f03ee076bfb04138c",
+        "id": "fonts-ark-pixel-10-mono-ja",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 485405,
+        "sha256": "5da9fbe934ae4d9d3f50e07bb264cfd0b728eadf2a0bcb7880f1d80167d2d8c3",
+        "id": "fonts-ark-pixel-10-mono-ko",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 484691,
+        "sha256": "348371cd502bd7e194c504541f08341ea84d6121ee3ed5e045e223cc0ab3bdd3",
+        "id": "fonts-ark-pixel-10-mono-latin",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 485066,
+        "sha256": "452118a8818d94f03281ad7fc52275538dc071c524b78272f3f70c3aacb72788",
+        "id": "fonts-ark-pixel-10-mono-zh_hans",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 485672,
+        "sha256": "3b78934d1952bac7d218d99c10606c6a8aa4d1c2052bbbba2ce719d06d24483e",
+        "id": "fonts-ark-pixel-10-mono-zh_hant",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 485205,
+        "sha256": "89eebb7bb48869e0ac2e261cde7f878ab227dad6e7f3f6a5474684359639843a",
+        "id": "fonts-ark-pixel-10-mono-zh_hk",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 485289,
+        "sha256": "d7bd3d516f54b88e525ed702575820a7dae3852c70759af6b425e9e23f48bb10",
+        "id": "fonts-ark-pixel-10-mono-zh_tw",
+        "path": "fonts/ark-pixel/10px-mono/ark-pixel-10px-monospaced-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 513877,
+        "sha256": "23c0fe22f0b760d739a3646606ebad40642cabd0370b7b767e8aa0c5188fde9c",
+        "id": "fonts-ark-pixel-10-proportional-ja",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 514030,
+        "sha256": "7342ff410309ca4f8ae7b2a64a1cc6b3456cabd435c451b79ee9986ea9b6739a",
+        "id": "fonts-ark-pixel-10-proportional-ko",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 513316,
+        "sha256": "4814c0f89ac71ecb18075ce6b89d500a6282092da26c66d3568faae48c42d904",
+        "id": "fonts-ark-pixel-10-proportional-latin",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 513691,
+        "sha256": "a13c8b0acbb00c2a0599949ad369ae3f45662b2e38c7e6d6230a9bfe035f678e",
+        "id": "fonts-ark-pixel-10-proportional-zh_hans",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 514297,
+        "sha256": "9ed5e80b2decd658b84bd7f5c956c448dcf830ef05fd41faa966d6aa1f511fbe",
+        "id": "fonts-ark-pixel-10-proportional-zh_hant",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 513830,
+        "sha256": "a3874ba81094c49b29f511ce5c55f2fdd81a45bfcbb8294f4d1181c54cc3c179",
+        "id": "fonts-ark-pixel-10-proportional-zh_hk",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 513914,
+        "sha256": "45f05fb7bdfcbebb23bb47b39eccf148165a4bdda633fdc261293ff84b5d84e8",
+        "id": "fonts-ark-pixel-10-proportional-zh_tw",
+        "path": "fonts/ark-pixel/10px-proportional/ark-pixel-10px-proportional-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3494797,
+        "sha256": "44ff065b4bd16d1258a17bbfdb5ffc2e5f8e8d5fd08c6822301f91dd75898d15",
+        "id": "fonts-ark-pixel-12-mono-ja",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3497898,
+        "sha256": "3e580eb38c32c647802911dded5db636bef9e2c4984434625c9fdc28929e5809",
+        "id": "fonts-ark-pixel-12-mono-ko",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3467706,
+        "sha256": "f2cdf6be6ffb08295e174c761d7865f5b1bcdbec916971720219861b10191a63",
+        "id": "fonts-ark-pixel-12-mono-latin",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3477743,
+        "sha256": "ad63c5b8fff51fe8b00cace8ae7a13c6a48a1e61a52d12b4e1af36febc1988c8",
+        "id": "fonts-ark-pixel-12-mono-zh_hans",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3508241,
+        "sha256": "a4dd291797f51c2f5fd8688c02a36d7b98b308324b8311469def98ae5db60038",
+        "id": "fonts-ark-pixel-12-mono-zh_hant",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3486632,
+        "sha256": "3dc0d91c7908239a25a79f14666e66277e0a55d9bb88d64677a562fb7f8d22d4",
+        "id": "fonts-ark-pixel-12-mono-zh_hk",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3490085,
+        "sha256": "8a7be8f01fae60824a922116294e6efabcd3ebe6c106aaa535d492279fad407b",
+        "id": "fonts-ark-pixel-12-mono-zh_tw",
+        "path": "fonts/ark-pixel/12px-mono/ark-pixel-12px-monospaced-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3499540,
+        "sha256": "3262e45c88d7c7d1c9594762413c3b4ac2e10656fa2a35cf098b3c2ebeb59b35",
+        "id": "fonts-ark-pixel-12-proportional-ja",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-ja.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3502640,
+        "sha256": "e993cba97b7e1d1e8b601d27996d0632ad7952c8445805f37f0cc7c72ab364fd",
+        "id": "fonts-ark-pixel-12-proportional-ko",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-ko.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3472450,
+        "sha256": "dba7e67cc1812323e84e394ca8998c9ee84be79107fedf317b85c50dd1915bc5",
+        "id": "fonts-ark-pixel-12-proportional-latin",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3482487,
+        "sha256": "535f70249c7c238963e1cb83b04644886a674cb5be2e316660cda66e20ae8c86",
+        "id": "fonts-ark-pixel-12-proportional-zh_hans",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_hans.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3512984,
+        "sha256": "256c1d0e6d860444cd460a67dfbe3404cbca43367a01b4c14fd1e5e29c526094",
+        "id": "fonts-ark-pixel-12-proportional-zh_hant",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_hant.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3491377,
+        "sha256": "c50b7b6324d1b8615b070c33fd2f197e600fc366f9f8f0665c87f2e6010cecce",
+        "id": "fonts-ark-pixel-12-proportional-zh_hk",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_hk.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3494830,
+        "sha256": "d82b09f1b0ba6a3f7f3ecee10793003f98d502bdf2300a2e082103ab987f1097",
+        "id": "fonts-ark-pixel-12-proportional-zh_tw",
+        "path": "fonts/ark-pixel/12px-proportional/ark-pixel-12px-proportional-zh_tw.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2026.09.25/ark-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244918,
+        "sha256": "7d4b80c425b45a2526c17dfb089c67d72d9abf9d9a9e715e5774a125cfbc2c3d",
+        "id": "fonts-ark-pixel-16-mono-ja-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-ja.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244927,
+        "sha256": "6a88f101b04c0d120625c205afa8d89dfad3bb83a04da2e544190ce3cd73dca8",
+        "id": "fonts-ark-pixel-16-mono-ko-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-ko.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244822,
+        "sha256": "6a337d53e772be3018e80c69601ba246b46f1b883d7e19af801277fe243a834c",
+        "id": "fonts-ark-pixel-16-mono-latin-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-latin.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244921,
+        "sha256": "90272ce0178ca8c4dd9ad016cde5dad0802b95f0fafad5313caa0671516c659e",
+        "id": "fonts-ark-pixel-16-mono-zh_cn-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_cn.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244947,
+        "sha256": "4afd365a22e8b1f9a479580c13acfed130348f383bd90dddf01ea6c259b32797",
+        "id": "fonts-ark-pixel-16-mono-zh_hk-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_hk.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244989,
+        "sha256": "d92f8c987d055471d6a1cef7b2e006b43a3c80567129eed693097240b242eb33",
+        "id": "fonts-ark-pixel-16-mono-zh_tr-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_tr.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 244989,
+        "sha256": "39a477901445e8a6e2ee1085a2abcc83c14bd23b3ef42da3d252c801d6c9714f",
+        "id": "fonts-ark-pixel-16-mono-zh_tw-deprecated16",
+        "path": "fonts/ark-pixel/16px-mono/ark-pixel-16px-monospaced-zh_tw.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-monospaced-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247737,
+        "sha256": "6575f4d94303e71b8ff9c342cb5e23c025421bc4ce3d049da20f0abe90113b68",
+        "id": "fonts-ark-pixel-16-proportional-ja-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-ja.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247746,
+        "sha256": "6708ccbd3232c688fc876e5734717cf5e41ed608739224d95348be478169cb7a",
+        "id": "fonts-ark-pixel-16-proportional-ko-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-ko.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247642,
+        "sha256": "46ca35dc172a4b0379911a99f84ef0ab186b4ee5133845be7b74005e53932464",
+        "id": "fonts-ark-pixel-16-proportional-latin-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-latin.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247740,
+        "sha256": "c2877c2272f3d307ff5e39f5cfad563efa4d845e600227b80ef543c683a767b5",
+        "id": "fonts-ark-pixel-16-proportional-zh_cn-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_cn.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247766,
+        "sha256": "e02140c5253a23045e28931739956148e30c317d995de57ad0e06b2a8009cbe5",
+        "id": "fonts-ark-pixel-16-proportional-zh_hk-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_hk.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247808,
+        "sha256": "38fcd0763139448de467e0c1f12b771b8ff3ec0eac995c2d3d2e4991c37c3519",
+        "id": "fonts-ark-pixel-16-proportional-zh_tr-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_tr.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 247808,
+        "sha256": "6f50ff769e7b3da8f48953de866575312945153fd1192899f2a0d4d4bec4e31e",
+        "id": "fonts-ark-pixel-16-proportional-zh_tw-deprecated16",
+        "path": "fonts/ark-pixel/16px-proportional/ark-pixel-16px-proportional-zh_tw.bdf",
+        "version": "2023.08.24",
+        "source_url": "https://github.com/TakWolf/ark-pixel-font/releases/download/2023.08.24/ark-pixel-font-16px-proportional-bdf-v2023.08.24.zip",
+        "license": "OFL-1.1"
+      }
+    ]
+  }
+}

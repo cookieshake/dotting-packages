@@ -1,7 +1,10 @@
 {
   "id": "core",
   "version": "0.1.0",
-  "sdk": { "min": "1.0.0", "max": "1.0.0" },
+  "sdk": {
+    "min": "1.0.0",
+    "max": "1.0.0"
+  },
   "entry": "main.js",
   "license": "MIT",
   "provenance": {
@@ -10,7 +13,21 @@
   "license_files": [
     "licenses/TomThumb-LICENSE.txt",
     "licenses/Spleen-LICENSE.txt",
-    "licenses/UNIFONT-COPYING.txt"
+    "licenses/UNIFONT-COPYING.txt",
+    "licenses/bitocra/LICENSE.txt",
+    "licenses/galmuri/LICENSE.txt",
+    "licenses/gohu/LICENSE.txt",
+    "licenses/k8x12/NOTICE.txt",
+    "licenses/misaki/NOTICE.txt",
+    "licenses/scientifica/LICENSE.txt",
+    "licenses/tamzen/LICENSE.txt",
+    "licenses/fusion-pixel/OFL.txt",
+    "licenses/fusion-pixel/third-party/ark-pixel/OFL.txt",
+    "licenses/fusion-pixel/third-party/boutique-bitmap-7x7/OFL.txt",
+    "licenses/fusion-pixel/third-party/boutique-bitmap-9x9/OFL.txt",
+    "licenses/fusion-pixel/third-party/cubic-11/OFL.txt",
+    "licenses/fusion-pixel/third-party/galmuri/LICENSE.txt",
+    "licenses/fusion-pixel/third-party/miseki-bitmap/LICENSE.txt"
   ],
   "resources": [
     {
@@ -40,6 +57,545 @@
       "path": "assets/fonts/unifont-16.0.04.bdf",
       "license": "GPL-2.0-or-later WITH Font-exception-2.0",
       "provenance": "GNU Unifont 16.0.04; full upstream COPYING retained; unmodified BDF SHA-256 40343cd7e33df7351c5a448497473697f82865e766c3ebb059f3ed6ade765587"
+    },
+    {
+      "id": "fonts-bitocra-4thd",
+      "kind": "font",
+      "path": "fonts/bitocra/4thD.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 d6b720ce2f4dc45e47e06e31d06a82b17105c253b4e45028773890f83057faf0"
+    },
+    {
+      "id": "fonts-bitocra-5thelement",
+      "kind": "font",
+      "path": "fonts/bitocra/5thElement.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 2b7f6a85a65ec00bd0e8e65e009e6804b7c748adfe490521294c9d2418781d9c"
+    },
+    {
+      "id": "fonts-bitocra-bitbuntu-full",
+      "kind": "font",
+      "path": "fonts/bitocra/bitbuntu-full.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 6fbf83b92a1fca0827c0ba128454837fbd74e07eca5e34ca85c23e9a24563069"
+    },
+    {
+      "id": "fonts-bitocra-bitbuntu",
+      "kind": "font",
+      "path": "fonts/bitocra/bitbuntu.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 ede56204dca9a149288f58f87708ff4ca8e2669ace7c4c27c1a5aa1c0f5a8b43"
+    },
+    {
+      "id": "fonts-bitocra-bitocra-13-full",
+      "kind": "font",
+      "path": "fonts/bitocra/bitocra-13-full.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 cdd33e440467b26d3abdda0b1666beed7fd5a96f87ef0a48897391caa8635fc7"
+    },
+    {
+      "id": "fonts-bitocra-bitocra-13",
+      "kind": "font",
+      "path": "fonts/bitocra/bitocra-13.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 31c4499baec1d5f881a53b15ed5c293c4a118bf3e97a99d6b1d672e836f8ad75"
+    },
+    {
+      "id": "fonts-bitocra-bitocra-full",
+      "kind": "font",
+      "path": "fonts/bitocra/bitocra-full.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 8c16ed4673573e6eb8723911be54a6aa239fdd69ceec5c2fa8166f8dc313fbc5"
+    },
+    {
+      "id": "fonts-bitocra-bitocra",
+      "kind": "font",
+      "path": "fonts/bitocra/bitocra.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 1408557f341b937adcf8eca5d96510bdd3711b5555b1c6b8fcf3b8a1c38a18b7"
+    },
+    {
+      "id": "fonts-bitocra-bitocra7",
+      "kind": "font",
+      "path": "fonts/bitocra/bitocra7.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "bitocra; original BDF SHA-256 ee4b7bc64bf6bc4b19757493af84b110cbf78cd5f66be7db459c799d50858967"
+    },
+    {
+      "id": "fonts-galmuri-7-regular",
+      "kind": "font",
+      "path": "fonts/galmuri/Galmuri7.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 2a6fd090ac6d24f7392d6cc49db02ce54b9d1c01048bf8c97cbcdbc5a885cb15"
+    },
+    {
+      "id": "fonts-galmuri-9-regular",
+      "kind": "font",
+      "path": "fonts/galmuri/Galmuri9.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 e87a1a4f7c5ce72b72802959fce27a3221d05e1f60f4610092d6922ad0456733"
+    },
+    {
+      "id": "fonts-galmuri-11-regular",
+      "kind": "font",
+      "path": "fonts/galmuri/Galmuri11.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 f72dba056f163f250b4af62ac08736391f82c8f680abb554e5fc0997f29e9936"
+    },
+    {
+      "id": "fonts-galmuri-14-regular",
+      "kind": "font",
+      "path": "fonts/galmuri/Galmuri14.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 c75d38c6ce8f7b620d33768b454f918dc7e382e754c7f446c577daade38be94e"
+    },
+    {
+      "id": "fonts-galmuri-11-bold",
+      "kind": "font",
+      "path": "fonts/galmuri/Galmuri11-Bold.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 4cacb7467e41ade23fc13ed76288df71481011d1ef27b32388915425aef515ed"
+    },
+    {
+      "id": "fonts-galmuri-11-condensed",
+      "kind": "font",
+      "path": "fonts/galmuri/Galmuri11-Condensed.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 5c19d39413241e272810e115ee810feaea6c4b5684bfa3e17a98ef1cb3a7df63"
+    },
+    {
+      "id": "fonts-galmuri-7-mono",
+      "kind": "font",
+      "path": "fonts/galmuri/GalmuriMono7.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 c7b9722070cce2246e3d5d0759420497569ddf259d62d60e6d5039d28a451464"
+    },
+    {
+      "id": "fonts-galmuri-9-mono",
+      "kind": "font",
+      "path": "fonts/galmuri/GalmuriMono9.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 563a76af1cdd8f32ad5f4c4fb5760d4fd5fd415be34554b54afb79186003017c"
+    },
+    {
+      "id": "fonts-galmuri-11-mono",
+      "kind": "font",
+      "path": "fonts/galmuri/GalmuriMono11.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Galmuri; original BDF SHA-256 9f7a34f51a3d2831b112bc122d2400009e99290faa08fac4338e9420f3ec35c0"
+    },
+    {
+      "id": "fonts-gohu-gohufont-11",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-11.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 c3de0e25ee9cba0b07866647a3c55d936db8f8944bc8134346c384727afa6dbb"
+    },
+    {
+      "id": "fonts-gohu-gohufont-11b",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-11b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 895d0230afa9f8562d23ca81462c7c467c76bae650b9d466e3182f4c206feab2"
+    },
+    {
+      "id": "fonts-gohu-gohufont-14",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-14.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 a89f40079443933982c4691fea52386b9394478492155f81af1335e74d0ff0a0"
+    },
+    {
+      "id": "fonts-gohu-gohufont-14b",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-14b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 ae4244a3f1b6a26add29df3b6c92edd6c947123b689f233c83be30160aacb5dd"
+    },
+    {
+      "id": "fonts-gohu-gohufont-uni-11",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-uni-11.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 c6bbb02937c17a98c94b25c5f09d69a515473a7c666a81218a596f161f233ccc"
+    },
+    {
+      "id": "fonts-gohu-gohufont-uni-11b",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-uni-11b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 80feedd17af3c81a28ef63caa02df881d2c52e5a878a26b5f14425ed00754030"
+    },
+    {
+      "id": "fonts-gohu-gohufont-uni-14",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-uni-14.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 cf5cdf71cb1a7237ea2ac3b9aade781f5f3d87144ec95c36a1bfd24e1c8591a0"
+    },
+    {
+      "id": "fonts-gohu-gohufont-uni-14b",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-uni-14b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 2d302820ea663a0f49d188a49759b18e8fc4f03ee982783ac629a940053523ac"
+    },
+    {
+      "id": "fonts-gohu-gohufont-22",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-22.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 3db2d9ae32fca747444389b61261fde9ef6a8b2fd92135ab9ef7beca9a94c1f2"
+    },
+    {
+      "id": "fonts-gohu-gohufont-22b",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-22b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 470043ee2ad54389605a7323ffbdb3239740c4b3ffead8ce88cf3a5a4da35e21"
+    },
+    {
+      "id": "fonts-gohu-gohufont-28",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-28.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 2919cee0f06a85b968f16bc5c951bca3e6e764fe014621958154259ce7ccdc24"
+    },
+    {
+      "id": "fonts-gohu-gohufont-28b",
+      "kind": "font",
+      "path": "fonts/gohu/gohufont-28b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "gohu; original BDF SHA-256 b866ef0d3c9f67ae806b751a694b4c5c1b5ca0db01c7d7c89d3fad5d21cb9844"
+    },
+    {
+      "id": "fonts-k8x12-k8x12",
+      "kind": "font",
+      "path": "fonts/k8x12/k8x12.bdf",
+      "license": "Littlelimit permissive notice; commercial and noncommercial redistribution is expressly permitted, with or without modification; provided without warranty. Not labeled OFL or SPDX.",
+      "provenance": "k8x12; original BDF SHA-256 97361b327b410c2cd6e8fe87ed3873387229e76af13829931d6987f267585277"
+    },
+    {
+      "id": "fonts-k8x12-k8x12l",
+      "kind": "font",
+      "path": "fonts/k8x12/k8x12L.bdf",
+      "license": "Littlelimit permissive notice; commercial and noncommercial redistribution is expressly permitted, with or without modification; provided without warranty. Not labeled OFL or SPDX.",
+      "provenance": "k8x12; original BDF SHA-256 fbad1cb568e874bbae0c24c3f4e2d20c4fd1e15aba5ace8f83f247d25bab7c5e"
+    },
+    {
+      "id": "fonts-k8x12-k8x12s",
+      "kind": "font",
+      "path": "fonts/k8x12/k8x12S.bdf",
+      "license": "Littlelimit permissive notice; commercial and noncommercial redistribution is expressly permitted, with or without modification; provided without warranty. Not labeled OFL or SPDX.",
+      "provenance": "k8x12; original BDF SHA-256 58b6d185b070b81ec41f5034f828f0d95eff05dc50cb35df0a270f24187ec2c5"
+    },
+    {
+      "id": "fonts-misaki-misaki-gothic",
+      "kind": "font",
+      "path": "fonts/misaki/misaki_gothic.bdf",
+      "license": "Littlelimit permissive notice; commercial and noncommercial redistribution is expressly permitted, with or without modification; provided without warranty. Not labeled OFL or SPDX.",
+      "provenance": "Misaki; original BDF SHA-256 28a8745552c844f7c73f11bdf4470225f5e08645a98c5404b2e25bb326a5cabd"
+    },
+    {
+      "id": "fonts-misaki-misaki-mincho",
+      "kind": "font",
+      "path": "fonts/misaki/misaki_mincho.bdf",
+      "license": "Littlelimit permissive notice; commercial and noncommercial redistribution is expressly permitted, with or without modification; provided without warranty. Not labeled OFL or SPDX.",
+      "provenance": "Misaki; original BDF SHA-256 4e317e910fa507cee43fb81f0fc1d1158a837c32cada0a346b9e6eab181a757d"
+    },
+    {
+      "id": "fonts-misaki-misaki-gothic-2nd",
+      "kind": "font",
+      "path": "fonts/misaki/misaki_gothic_2nd.bdf",
+      "license": "Littlelimit permissive notice; commercial and noncommercial redistribution is expressly permitted, with or without modification; provided without warranty. Not labeled OFL or SPDX.",
+      "provenance": "Misaki; original BDF SHA-256 fddbfdda822dd19ca2da5f509b032192d504e7825eb8215afc8ae9dd2d7e4855"
+    },
+    {
+      "id": "fonts-scientifica-scientificaitalic-11",
+      "kind": "font",
+      "path": "fonts/scientifica/scientificaItalic-11.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "scientifica; original BDF SHA-256 22a9ed85a205ebd105b7e49342a1328c108258af0657b41abe6fa10d7c2d00f5"
+    },
+    {
+      "id": "fonts-scientifica-scientificabold-11",
+      "kind": "font",
+      "path": "fonts/scientifica/scientificaBold-11.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "scientifica; original BDF SHA-256 83a22b744ab47f8fc02037c8f219523cee1c314cf73ff98eb1644d36c5d1ecd3"
+    },
+    {
+      "id": "fonts-scientifica-scientifica-11",
+      "kind": "font",
+      "path": "fonts/scientifica/scientifica-11.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "scientifica; original BDF SHA-256 d298f1fe8ce2234a1ecaeff7ab7c9db7cf47b74b658f4e8d614a7f4e8e702049"
+    },
+    {
+      "id": "fonts-spleen-spleen-6x12",
+      "kind": "font",
+      "path": "fonts/spleen/2.2.0/spleen-6x12.bdf",
+      "license": "BSD-2-Clause",
+      "provenance": "Spleen; original BDF SHA-256 fc0743d164690f99b7e2e1b9d503180e4c719a9831ae03fd8f6da18c857dee27"
+    },
+    {
+      "id": "fonts-spleen-spleen-8x16",
+      "kind": "font",
+      "path": "fonts/spleen/2.2.0/spleen-8x16.bdf",
+      "license": "BSD-2-Clause",
+      "provenance": "Spleen; original BDF SHA-256 4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae"
+    },
+    {
+      "id": "fonts-spleen-spleen-12x24",
+      "kind": "font",
+      "path": "fonts/spleen/2.2.0/spleen-12x24.bdf",
+      "license": "BSD-2-Clause",
+      "provenance": "Spleen; original BDF SHA-256 181989f2c5f47b34c2474cd424b387b0002aa77fc970e59ee31e16733af24687"
+    },
+    {
+      "id": "fonts-spleen-spleen-16x32",
+      "kind": "font",
+      "path": "fonts/spleen/2.2.0/spleen-16x32.bdf",
+      "license": "BSD-2-Clause",
+      "provenance": "Spleen; original BDF SHA-256 f6db2549d46c5699ceca7ccc26e747c8bdad3af76239f86aae6ed995bd2f3d37"
+    },
+    {
+      "id": "fonts-tamzen-tamzen10x20b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen10x20b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 42ddbda34da5e56174087cb049ee141d94c73e996a3469315efe0ab5fb4618eb"
+    },
+    {
+      "id": "fonts-tamzen-tamzen10x20r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen10x20r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 bd66c618b64dab39ba1b2399b93c5bf658c7f13be1349021cb2115f02e7d7576"
+    },
+    {
+      "id": "fonts-tamzen-tamzen5x9b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen5x9b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 98d59de7c4399e70ec9c1d61ce4e784acf950f00334241aae1325a3ef1f9b53e"
+    },
+    {
+      "id": "fonts-tamzen-tamzen5x9r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen5x9r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 da50ec4e659725fc1897572549ecbc98707fc473ba9b1196af621c991b6f636c"
+    },
+    {
+      "id": "fonts-tamzen-tamzen6x12b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen6x12b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 17a4146cbd423562dc2fbefde6d515df41e1ed115cba1c207aed61fabeaa4bf8"
+    },
+    {
+      "id": "fonts-tamzen-tamzen6x12r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen6x12r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 f8a41291927783ae9d2c10efc242e53d620ba5ea689daecd943e91f84d5f9203"
+    },
+    {
+      "id": "fonts-tamzen-tamzen7x13b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen7x13b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 ed918235687aeb3d0592a763994075f2b4197be9d542e5a847c61442cf352f56"
+    },
+    {
+      "id": "fonts-tamzen-tamzen7x13r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen7x13r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 9433986fcf1316cdc1ee227df2cfd977cc06438dd548131acb259edbf17609a6"
+    },
+    {
+      "id": "fonts-tamzen-tamzen7x14b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen7x14b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 17a2c1bd4b90255a742f325dcf976b9921a3fc4041e93cebb07a82e1c0515833"
+    },
+    {
+      "id": "fonts-tamzen-tamzen7x14r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen7x14r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 57b1365606b7b5995a3aff644f673b8c1a1aa9ea184afe5771ce6e79ab4083f0"
+    },
+    {
+      "id": "fonts-tamzen-tamzen8x15b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen8x15b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 8dd043b4fbd850596817aea9103f0762e9cea6b638264bed54b8d384624c2a47"
+    },
+    {
+      "id": "fonts-tamzen-tamzen8x15r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen8x15r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 6f68cf0a65de147d3a6e7a21da134f3554f04ff453fa2242dfe9d2fe0e95a594"
+    },
+    {
+      "id": "fonts-tamzen-tamzen8x16b",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen8x16b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 d7eeee82426cfbdf82aa8f631363c8db495289c24b17c3c03167c3e6dfce3656"
+    },
+    {
+      "id": "fonts-tamzen-tamzen8x16r",
+      "kind": "font",
+      "path": "fonts/tamzen/Tamzen8x16r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 3161aa86340af37a169536d7fac4afaa1b8cdb4de555e17c14c97aa5995e9b1a"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline10x20b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline10x20b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 b7db26478b01042b6e5c16393e3e00baa666fd36821ce635af2655d0240bdeb0"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline10x20r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline10x20r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 08dd29e58761cf97bf063a366e359640391b8ec4cb2abb08361cdb157c1af4fd"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline5x9b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline5x9b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 e73279c4395266a6a2c2b192e38b76cb44ca665fa9445898072fffcb9ef551a7"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline5x9r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline5x9r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 e08129536460359e1a3408dfe93cce78bc98e03dafcccf8831a4f671e78fe7e1"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline6x12b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline6x12b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 26dfda52cd590ed4e3d9846f3381c7bcbd28f2ccd8afab427c2dbb0f5c5f717f"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline6x12r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline6x12r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 c0db6ac28a9e0bd81bf1fd11c8f1da5a03fd37f99122954649a02c461c02e845"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline7x13b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline7x13b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 9851af9fd4fa7337c77e929c51c66acd3eb48ac08a84f1e2c7faa4c532bd3df1"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline7x13r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline7x13r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 8b3ee3bc722f2ee31d86f614a8d9cb80cf20da46a692a2eabd16877eb5d5a3fa"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline7x14b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline7x14b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 2c0a87e4d83d65ef931abba031c2185334c5e2e06fb55fc4123d149f3ec705ae"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline7x14r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline7x14r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 8d8c1c564e6adca3a20328a9bc8b491c191365533b17b62b0d9e3fd0cafb19de"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline8x15b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline8x15b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 e39d47859778d155d871c2fa41e8d6ff648c89e90d6c0ffd741a91b0177e12fb"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline8x15r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline8x15r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 e83ec48b459793c1f509411693dc7cb9b80de1fba109512e529929dc107c694a"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline8x16b",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline8x16b.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 b1ac1812e7fda5ff5b5fdc596b376589e5971f183a809ec4ff025cbd195266d1"
+    },
+    {
+      "id": "fonts-tamzen-tamzenforpowerline8x16r",
+      "kind": "font",
+      "path": "fonts/tamzen/TamzenForPowerline8x16r.bdf",
+      "license": "SEE-LICENSE",
+      "provenance": "tamzen; original BDF SHA-256 fe131220fd87301e036ece1513680af66ce7bb29bf65038b7a5b92f38d3ae6c3"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-mono-e71b599d29d3",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 08370d01062f25361ed1982d9c3150d1a7e5592743795851ed8c1f62570dcc5a"
+    },
+    {
+      "id": "fonts-fusion-pixel-10-proportional-d547a71297b9",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 9b4d7981be79e3af1eb28b747d6ed801a815e827c0e020a0daab39f0f4d97c70"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-mono-6b2a5a087d97",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 b3e1f71acb4bb1391e3d5f01b87d9ac6d7d86f2d0a92b1008254dd6e3c620d3e"
+    },
+    {
+      "id": "fonts-fusion-pixel-12-proportional-1a4cb7aed603",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 4f25284618eb48f6470b7dbc42a88d7aa824a35c82e80a2d9ba83171bdf667ad"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-mono-e4e1a8b5cf7f",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 7312455cbd2839d27ea1ff3203809311bced49a9efbe6bf2a45cf9067524fc57"
+    },
+    {
+      "id": "fonts-fusion-pixel-8-proportional-65d8abeb78e0",
+      "kind": "font",
+      "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-latin.bdf",
+      "license": "OFL-1.1",
+      "provenance": "Fusion Pixel; original BDF SHA-256 1497782318b3336dcef15b42b87cf112724a014bdf7572928c007af92b0cdd69"
     }
   ],
   "metadata": {
@@ -75,6 +631,643 @@
         "source_license_url": "https://unifoundry.com/pub/unifont/unifont-16.0.04/unifont-16.0.04.tar.gz (COPYING)",
         "license": "GPL-2.0-or-later WITH Font-exception-2.0",
         "sha256": "40343cd7e33df7351c5a448497473697f82865e766c3ebb059f3ed6ade765587"
+      },
+      {
+        "bytes": 9266,
+        "id": "fonts-bitocra-4thd",
+        "path": "fonts/bitocra/4thD.bdf",
+        "sha256": "d6b720ce2f4dc45e47e06e31d06a82b17105c253b4e45028773890f83057faf0",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/4thD.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 9563,
+        "id": "fonts-bitocra-5thelement",
+        "path": "fonts/bitocra/5thElement.bdf",
+        "sha256": "2b7f6a85a65ec00bd0e8e65e009e6804b7c748adfe490521294c9d2418781d9c",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/5thElement.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 51438,
+        "id": "fonts-bitocra-bitbuntu-full",
+        "path": "fonts/bitocra/bitbuntu-full.bdf",
+        "sha256": "6fbf83b92a1fca0827c0ba128454837fbd74e07eca5e34ca85c23e9a24563069",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitbuntu-full.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 19791,
+        "id": "fonts-bitocra-bitbuntu",
+        "path": "fonts/bitocra/bitbuntu.bdf",
+        "sha256": "ede56204dca9a149288f58f87708ff4ca8e2669ace7c4c27c1a5aa1c0f5a8b43",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitbuntu.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 34814,
+        "id": "fonts-bitocra-bitocra-13-full",
+        "path": "fonts/bitocra/bitocra-13-full.bdf",
+        "sha256": "cdd33e440467b26d3abdda0b1666beed7fd5a96f87ef0a48897391caa8635fc7",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra-13-full.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 23778,
+        "id": "fonts-bitocra-bitocra-13",
+        "path": "fonts/bitocra/bitocra-13.bdf",
+        "sha256": "31c4499baec1d5f881a53b15ed5c293c4a118bf3e97a99d6b1d672e836f8ad75",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra-13.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 54085,
+        "id": "fonts-bitocra-bitocra-full",
+        "path": "fonts/bitocra/bitocra-full.bdf",
+        "sha256": "8c16ed4673573e6eb8723911be54a6aa239fdd69ceec5c2fa8166f8dc313fbc5",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra-full.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 19750,
+        "id": "fonts-bitocra-bitocra",
+        "path": "fonts/bitocra/bitocra.bdf",
+        "sha256": "1408557f341b937adcf8eca5d96510bdd3711b5555b1c6b8fcf3b8a1c38a18b7",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 19663,
+        "id": "fonts-bitocra-bitocra7",
+        "path": "fonts/bitocra/bitocra7.bdf",
+        "sha256": "ee4b7bc64bf6bc4b19757493af84b110cbf78cd5f66be7db459c799d50858967",
+        "source_url": "https://raw.githubusercontent.com/ninjaaron/bitocra/master/bitocra7.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 2091908,
+        "sha256": "2a6fd090ac6d24f7392d6cc49db02ce54b9d1c01048bf8c97cbcdbc5a885cb15",
+        "id": "fonts-galmuri-7-regular",
+        "path": "fonts/galmuri/Galmuri7.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/Galmuri7.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 2577999,
+        "sha256": "e87a1a4f7c5ce72b72802959fce27a3221d05e1f60f4610092d6922ad0456733",
+        "id": "fonts-galmuri-9-regular",
+        "path": "fonts/galmuri/Galmuri9.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/Galmuri9.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 2901946,
+        "sha256": "f72dba056f163f250b4af62ac08736391f82c8f680abb554e5fc0997f29e9936",
+        "id": "fonts-galmuri-11-regular",
+        "path": "fonts/galmuri/Galmuri11.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/Galmuri11.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 2938786,
+        "sha256": "c75d38c6ce8f7b620d33768b454f918dc7e382e754c7f446c577daade38be94e",
+        "id": "fonts-galmuri-14-regular",
+        "path": "fonts/galmuri/Galmuri14.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/Galmuri14.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 1765971,
+        "sha256": "4cacb7467e41ade23fc13ed76288df71481011d1ef27b32388915425aef515ed",
+        "id": "fonts-galmuri-11-bold",
+        "path": "fonts/galmuri/Galmuri11-Bold.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/Galmuri11-Bold.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 1533524,
+        "sha256": "5c19d39413241e272810e115ee810feaea6c4b5684bfa3e17a98ef1cb3a7df63",
+        "id": "fonts-galmuri-11-condensed",
+        "path": "fonts/galmuri/Galmuri11-Condensed.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/Galmuri11-Condensed.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 2027972,
+        "sha256": "c7b9722070cce2246e3d5d0759420497569ddf259d62d60e6d5039d28a451464",
+        "id": "fonts-galmuri-7-mono",
+        "path": "fonts/galmuri/GalmuriMono7.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/GalmuriMono7.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 2482851,
+        "sha256": "563a76af1cdd8f32ad5f4c4fb5760d4fd5fd415be34554b54afb79186003017c",
+        "id": "fonts-galmuri-9-mono",
+        "path": "fonts/galmuri/GalmuriMono9.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/GalmuriMono9.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 2820854,
+        "sha256": "9f7a34f51a3d2831b112bc122d2400009e99290faa08fac4338e9420f3ec35c0",
+        "id": "fonts-galmuri-11-mono",
+        "path": "fonts/galmuri/GalmuriMono11.bdf",
+        "version": "2.40.4",
+        "source_url": "https://raw.githubusercontent.com/quiple/galmuri/bdb86ae89466a361eb8df861222736b81ff975ef/dist/GalmuriMono11.bdf",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 23276,
+        "id": "fonts-gohu-gohufont-11",
+        "path": "fonts/gohu/gohufont-11.bdf",
+        "sha256": "c3de0e25ee9cba0b07866647a3c55d936db8f8944bc8134346c384727afa6dbb",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-11.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 23263,
+        "id": "fonts-gohu-gohufont-11b",
+        "path": "fonts/gohu/gohufont-11b.bdf",
+        "sha256": "895d0230afa9f8562d23ca81462c7c467c76bae650b9d466e3182f4c206feab2",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-11b.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 24567,
+        "id": "fonts-gohu-gohufont-14",
+        "path": "fonts/gohu/gohufont-14.bdf",
+        "sha256": "a89f40079443933982c4691fea52386b9394478492155f81af1335e74d0ff0a0",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-14.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 24563,
+        "id": "fonts-gohu-gohufont-14b",
+        "path": "fonts/gohu/gohufont-14b.bdf",
+        "sha256": "ae4244a3f1b6a26add29df3b6c92edd6c947123b689f233c83be30160aacb5dd",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-14b.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 200325,
+        "id": "fonts-gohu-gohufont-uni-11",
+        "path": "fonts/gohu/gohufont-uni-11.bdf",
+        "sha256": "c6bbb02937c17a98c94b25c5f09d69a515473a7c666a81218a596f161f233ccc",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-uni-11.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 200312,
+        "id": "fonts-gohu-gohufont-uni-11b",
+        "path": "fonts/gohu/gohufont-uni-11b.bdf",
+        "sha256": "80feedd17af3c81a28ef63caa02df881d2c52e5a878a26b5f14425ed00754030",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-uni-11b.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 108375,
+        "id": "fonts-gohu-gohufont-uni-14",
+        "path": "fonts/gohu/gohufont-uni-14.bdf",
+        "sha256": "cf5cdf71cb1a7237ea2ac3b9aade781f5f3d87144ec95c36a1bfd24e1c8591a0",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-uni-14.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 108371,
+        "id": "fonts-gohu-gohufont-uni-14b",
+        "path": "fonts/gohu/gohufont-uni-14b.bdf",
+        "sha256": "2d302820ea663a0f49d188a49759b18e8fc4f03ee982783ac629a940053523ac",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/gohufont-uni-14b.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 31590,
+        "id": "fonts-gohu-gohufont-22",
+        "path": "fonts/gohu/gohufont-22.bdf",
+        "sha256": "3db2d9ae32fca747444389b61261fde9ef6a8b2fd92135ab9ef7beca9a94c1f2",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/hidpi/gohufont-22.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 31631,
+        "id": "fonts-gohu-gohufont-22b",
+        "path": "fonts/gohu/gohufont-22b.bdf",
+        "sha256": "470043ee2ad54389605a7323ffbdb3239740c4b3ffead8ce88cf3a5a4da35e21",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/hidpi/gohufont-22b.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 43199,
+        "id": "fonts-gohu-gohufont-28",
+        "path": "fonts/gohu/gohufont-28.bdf",
+        "sha256": "2919cee0f06a85b968f16bc5c951bca3e6e764fe014621958154259ce7ccdc24",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/hidpi/gohufont-28.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 43195,
+        "id": "fonts-gohu-gohufont-28b",
+        "path": "fonts/gohu/gohufont-28b.bdf",
+        "sha256": "b866ef0d3c9f67ae806b751a694b4c5c1b5ca0db01c7d7c89d3fad5d21cb9844",
+        "source_url": "https://raw.githubusercontent.com/hchargois/gohufont/master/hidpi/gohufont-28b.bdf",
+        "version": "master"
+      },
+      {
+        "bytes": 844802,
+        "sha256": "97361b327b410c2cd6e8fe87ed3873387229e76af13829931d6987f267585277",
+        "path": "fonts/k8x12/k8x12.bdf",
+        "version": "2021-05-05",
+        "source_url": "https://littlelimit.net/arc/k8x12/k8x12_bdf_2021-05-05.zip",
+        "license": "Littlelimit permissive notice (see preserved full notice; not SPDX/OFL)",
+        "id": "fonts-k8x12-k8x12"
+      },
+      {
+        "bytes": 845811,
+        "sha256": "fbad1cb568e874bbae0c24c3f4e2d20c4fd1e15aba5ace8f83f247d25bab7c5e",
+        "path": "fonts/k8x12/k8x12L.bdf",
+        "version": "2021-05-05",
+        "source_url": "https://littlelimit.net/arc/k8x12/k8x12_bdf_2021-05-05.zip",
+        "license": "Littlelimit permissive notice (see preserved full notice; not SPDX/OFL)",
+        "id": "fonts-k8x12-k8x12l"
+      },
+      {
+        "bytes": 842228,
+        "sha256": "58b6d185b070b81ec41f5034f828f0d95eff05dc50cb35df0a270f24187ec2c5",
+        "path": "fonts/k8x12/k8x12S.bdf",
+        "version": "2021-05-05",
+        "source_url": "https://littlelimit.net/arc/k8x12/k8x12_bdf_2021-05-05.zip",
+        "license": "Littlelimit permissive notice (see preserved full notice; not SPDX/OFL)",
+        "id": "fonts-k8x12-k8x12s"
+      },
+      {
+        "bytes": 763884,
+        "sha256": "28a8745552c844f7c73f11bdf4470225f5e08645a98c5404b2e25bb326a5cabd",
+        "path": "fonts/misaki/misaki_gothic.bdf",
+        "version": "2021-05-05",
+        "source_url": "https://littlelimit.net/arc/misaki/misaki_bdf_2021-05-05.zip",
+        "license": "Littlelimit permissive notice (see preserved full notice; not SPDX/OFL)",
+        "id": "fonts-misaki-misaki-gothic"
+      },
+      {
+        "bytes": 763906,
+        "sha256": "4e317e910fa507cee43fb81f0fc1d1158a837c32cada0a346b9e6eab181a757d",
+        "path": "fonts/misaki/misaki_mincho.bdf",
+        "version": "2021-05-05",
+        "source_url": "https://littlelimit.net/arc/misaki/misaki_bdf_2021-05-05.zip",
+        "license": "Littlelimit permissive notice (see preserved full notice; not SPDX/OFL)",
+        "id": "fonts-misaki-misaki-mincho"
+      },
+      {
+        "bytes": 757316,
+        "sha256": "fddbfdda822dd19ca2da5f509b032192d504e7825eb8215afc8ae9dd2d7e4855",
+        "path": "fonts/misaki/misaki_gothic_2nd.bdf",
+        "version": "2021-05-05",
+        "source_url": "https://littlelimit.net/arc/misaki/misaki_bdf_2021-05-05.zip",
+        "license": "Littlelimit permissive notice (see preserved full notice; not SPDX/OFL)",
+        "id": "fonts-misaki-misaki-gothic-2nd"
+      },
+      {
+        "bytes": 112490,
+        "id": "fonts-scientifica-scientificaitalic-11",
+        "path": "fonts/scientifica/scientificaItalic-11.bdf",
+        "sha256": "22a9ed85a205ebd105b7e49342a1328c108258af0657b41abe6fa10d7c2d00f5",
+        "source_url": "release-asset:https://github.com/oppiliappan/scientifica/releases/download/v2.3/scientifica.tar",
+        "version": "v2.3"
+      },
+      {
+        "bytes": 102486,
+        "id": "fonts-scientifica-scientificabold-11",
+        "path": "fonts/scientifica/scientificaBold-11.bdf",
+        "sha256": "83a22b744ab47f8fc02037c8f219523cee1c314cf73ff98eb1644d36c5d1ecd3",
+        "source_url": "release-asset:https://github.com/oppiliappan/scientifica/releases/download/v2.3/scientifica.tar",
+        "version": "v2.3"
+      },
+      {
+        "bytes": 113637,
+        "id": "fonts-scientifica-scientifica-11",
+        "path": "fonts/scientifica/scientifica-11.bdf",
+        "sha256": "d298f1fe8ce2234a1ecaeff7ab7c9db7cf47b74b658f4e8d614a7f4e8e702049",
+        "source_url": "release-asset:https://github.com/oppiliappan/scientifica/releases/download/v2.3/scientifica.tar",
+        "version": "v2.3"
+      },
+      {
+        "path": "fonts/spleen/2.2.0/spleen-6x12.bdf",
+        "sha256": "fc0743d164690f99b7e2e1b9d503180e4c719a9831ae03fd8f6da18c857dee27",
+        "id": "fonts-spleen-spleen-6x12",
+        "version": "2.2.0",
+        "source_url": "https://github.com/fcambus/spleen/releases/tag/2.2.0",
+        "bytes": 76613
+      },
+      {
+        "path": "fonts/spleen/2.2.0/spleen-8x16.bdf",
+        "sha256": "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae",
+        "id": "fonts-spleen-spleen-8x16",
+        "version": "2.2.0",
+        "source_url": "https://github.com/fcambus/spleen/releases/tag/2.2.0",
+        "bytes": 150678
+      },
+      {
+        "path": "fonts/spleen/2.2.0/spleen-12x24.bdf",
+        "sha256": "181989f2c5f47b34c2474cd424b387b0002aa77fc970e59ee31e16733af24687",
+        "id": "fonts-spleen-spleen-12x24",
+        "version": "2.2.0",
+        "source_url": "https://github.com/fcambus/spleen/releases/tag/2.2.0",
+        "bytes": 211638
+      },
+      {
+        "path": "fonts/spleen/2.2.0/spleen-16x32.bdf",
+        "sha256": "f6db2549d46c5699ceca7ccc26e747c8bdad3af76239f86aae6ed995bd2f3d37",
+        "id": "fonts-spleen-spleen-16x32",
+        "version": "2.2.0",
+        "source_url": "https://github.com/fcambus/spleen/releases/tag/2.2.0",
+        "bytes": 262175
+      },
+      {
+        "bytes": 35838,
+        "id": "fonts-tamzen-tamzen10x20b",
+        "path": "fonts/tamzen/Tamzen10x20b.bdf",
+        "sha256": "42ddbda34da5e56174087cb049ee141d94c73e996a3469315efe0ab5fb4618eb",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen10x20b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 35841,
+        "id": "fonts-tamzen-tamzen10x20r",
+        "path": "fonts/tamzen/Tamzen10x20r.bdf",
+        "sha256": "bd66c618b64dab39ba1b2399b93c5bf658c7f13be1349021cb2115f02e7d7576",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen10x20r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 21283,
+        "id": "fonts-tamzen-tamzen5x9b",
+        "path": "fonts/tamzen/Tamzen5x9b.bdf",
+        "sha256": "98d59de7c4399e70ec9c1d61ce4e784acf950f00334241aae1325a3ef1f9b53e",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen5x9b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 21287,
+        "id": "fonts-tamzen-tamzen5x9r",
+        "path": "fonts/tamzen/Tamzen5x9r.bdf",
+        "sha256": "da50ec4e659725fc1897572549ecbc98707fc473ba9b1196af621c991b6f636c",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen5x9r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 23296,
+        "id": "fonts-tamzen-tamzen6x12b",
+        "path": "fonts/tamzen/Tamzen6x12b.bdf",
+        "sha256": "17a4146cbd423562dc2fbefde6d515df41e1ed115cba1c207aed61fabeaa4bf8",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen6x12b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 23300,
+        "id": "fonts-tamzen-tamzen6x12r",
+        "path": "fonts/tamzen/Tamzen6x12r.bdf",
+        "sha256": "f8a41291927783ae9d2c10efc242e53d620ba5ea689daecd943e91f84d5f9203",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen6x12r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 23866,
+        "id": "fonts-tamzen-tamzen7x13b",
+        "path": "fonts/tamzen/Tamzen7x13b.bdf",
+        "sha256": "ed918235687aeb3d0592a763994075f2b4197be9d542e5a847c61442cf352f56",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen7x13b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 23870,
+        "id": "fonts-tamzen-tamzen7x13r",
+        "path": "fonts/tamzen/Tamzen7x13r.bdf",
+        "sha256": "9433986fcf1316cdc1ee227df2cfd977cc06438dd548131acb259edbf17609a6",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen7x13r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24438,
+        "id": "fonts-tamzen-tamzen7x14b",
+        "path": "fonts/tamzen/Tamzen7x14b.bdf",
+        "sha256": "17a2c1bd4b90255a742f325dcf976b9921a3fc4041e93cebb07a82e1c0515833",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen7x14b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24316,
+        "id": "fonts-tamzen-tamzen7x14r",
+        "path": "fonts/tamzen/Tamzen7x14r.bdf",
+        "sha256": "57b1365606b7b5995a3aff644f673b8c1a1aa9ea184afe5771ce6e79ab4083f0",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen7x14r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25008,
+        "id": "fonts-tamzen-tamzen8x15b",
+        "path": "fonts/tamzen/Tamzen8x15b.bdf",
+        "sha256": "8dd043b4fbd850596817aea9103f0762e9cea6b638264bed54b8d384624c2a47",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen8x15b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24883,
+        "id": "fonts-tamzen-tamzen8x15r",
+        "path": "fonts/tamzen/Tamzen8x15r.bdf",
+        "sha256": "6f68cf0a65de147d3a6e7a21da134f3554f04ff453fa2242dfe9d2fe0e95a594",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen8x15r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25626,
+        "id": "fonts-tamzen-tamzen8x16b",
+        "path": "fonts/tamzen/Tamzen8x16b.bdf",
+        "sha256": "d7eeee82426cfbdf82aa8f631363c8db495289c24b17c3c03167c3e6dfce3656",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen8x16b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25498,
+        "id": "fonts-tamzen-tamzen8x16r",
+        "path": "fonts/tamzen/Tamzen8x16r.bdf",
+        "sha256": "3161aa86340af37a169536d7fac4afaa1b8cdb4de555e17c14c97aa5995e9b1a",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/Tamzen8x16r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 37172,
+        "id": "fonts-tamzen-tamzenforpowerline10x20b",
+        "path": "fonts/tamzen/TamzenForPowerline10x20b.bdf",
+        "sha256": "b7db26478b01042b6e5c16393e3e00baa666fd36821ce635af2655d0240bdeb0",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline10x20b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 37175,
+        "id": "fonts-tamzen-tamzenforpowerline10x20r",
+        "path": "fonts/tamzen/TamzenForPowerline10x20r.bdf",
+        "sha256": "08dd29e58761cf97bf063a366e359640391b8ec4cb2abb08361cdb157c1af4fd",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline10x20r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 22085,
+        "id": "fonts-tamzen-tamzenforpowerline5x9b",
+        "path": "fonts/tamzen/TamzenForPowerline5x9b.bdf",
+        "sha256": "e73279c4395266a6a2c2b192e38b76cb44ca665fa9445898072fffcb9ef551a7",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline5x9b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 22089,
+        "id": "fonts-tamzen-tamzenforpowerline5x9r",
+        "path": "fonts/tamzen/TamzenForPowerline5x9r.bdf",
+        "sha256": "e08129536460359e1a3408dfe93cce78bc98e03dafcccf8831a4f671e78fe7e1",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline5x9r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24168,
+        "id": "fonts-tamzen-tamzenforpowerline6x12b",
+        "path": "fonts/tamzen/TamzenForPowerline6x12b.bdf",
+        "sha256": "26dfda52cd590ed4e3d9846f3381c7bcbd28f2ccd8afab427c2dbb0f5c5f717f",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline6x12b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24172,
+        "id": "fonts-tamzen-tamzenforpowerline6x12r",
+        "path": "fonts/tamzen/TamzenForPowerline6x12r.bdf",
+        "sha256": "c0db6ac28a9e0bd81bf1fd11c8f1da5a03fd37f99122954649a02c461c02e845",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline6x12r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24759,
+        "id": "fonts-tamzen-tamzenforpowerline7x13b",
+        "path": "fonts/tamzen/TamzenForPowerline7x13b.bdf",
+        "sha256": "9851af9fd4fa7337c77e929c51c66acd3eb48ac08a84f1e2c7faa4c532bd3df1",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline7x13b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 24763,
+        "id": "fonts-tamzen-tamzenforpowerline7x13r",
+        "path": "fonts/tamzen/TamzenForPowerline7x13r.bdf",
+        "sha256": "8b3ee3bc722f2ee31d86f614a8d9cb80cf20da46a692a2eabd16877eb5d5a3fa",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline7x13r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25352,
+        "id": "fonts-tamzen-tamzenforpowerline7x14b",
+        "path": "fonts/tamzen/TamzenForPowerline7x14b.bdf",
+        "sha256": "2c0a87e4d83d65ef931abba031c2185334c5e2e06fb55fc4123d149f3ec705ae",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline7x14b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25230,
+        "id": "fonts-tamzen-tamzenforpowerline7x14r",
+        "path": "fonts/tamzen/TamzenForPowerline7x14r.bdf",
+        "sha256": "8d8c1c564e6adca3a20328a9bc8b491c191365533b17b62b0d9e3fd0cafb19de",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline7x14r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25943,
+        "id": "fonts-tamzen-tamzenforpowerline8x15b",
+        "path": "fonts/tamzen/TamzenForPowerline8x15b.bdf",
+        "sha256": "e39d47859778d155d871c2fa41e8d6ff648c89e90d6c0ffd741a91b0177e12fb",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline8x15b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 25818,
+        "id": "fonts-tamzen-tamzenforpowerline8x15r",
+        "path": "fonts/tamzen/TamzenForPowerline8x15r.bdf",
+        "sha256": "e83ec48b459793c1f509411693dc7cb9b80de1fba109512e529929dc107c694a",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline8x15r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 26603,
+        "id": "fonts-tamzen-tamzenforpowerline8x16b",
+        "path": "fonts/tamzen/TamzenForPowerline8x16b.bdf",
+        "sha256": "b1ac1812e7fda5ff5b5fdc596b376589e5971f183a809ec4ff025cbd195266d1",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline8x16b.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 26475,
+        "id": "fonts-tamzen-tamzenforpowerline8x16r",
+        "path": "fonts/tamzen/TamzenForPowerline8x16r.bdf",
+        "sha256": "fe131220fd87301e036ece1513680af66ce7bb29bf65038b7a5b92f38d3ae6c3",
+        "source_url": "https://raw.githubusercontent.com/sunaku/tamzen-font/3255e8259bc9b880c60ab8b737ec8aa574e00d75/bdf/TamzenForPowerline8x16r.bdf",
+        "version": "3255e8259bc9b880c60ab8b737ec8aa574e00d75"
+      },
+      {
+        "bytes": 3273094,
+        "sha256": "08370d01062f25361ed1982d9c3150d1a7e5592743795851ed8c1f62570dcc5a",
+        "id": "fonts-fusion-pixel-10-mono-e71b599d29d3",
+        "path": "fonts/fusion-pixel/10px-mono/fusion-pixel-10px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3301719,
+        "sha256": "9b4d7981be79e3af1eb28b747d6ed801a815e827c0e020a0daab39f0f4d97c70",
+        "id": "fonts-fusion-pixel-10-proportional-d547a71297b9",
+        "path": "fonts/fusion-pixel/10px-proportional/fusion-pixel-10px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-10px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5197120,
+        "sha256": "b3e1f71acb4bb1391e3d5f01b87d9ac6d7d86f2d0a92b1008254dd6e3c620d3e",
+        "id": "fonts-fusion-pixel-12-mono-6b2a5a087d97",
+        "path": "fonts/fusion-pixel/12px-mono/fusion-pixel-12px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 5201807,
+        "sha256": "4f25284618eb48f6470b7dbc42a88d7aa824a35c82e80a2d9ba83171bdf667ad",
+        "id": "fonts-fusion-pixel-12-proportional-1a4cb7aed603",
+        "path": "fonts/fusion-pixel/12px-proportional/fusion-pixel-12px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095892,
+        "sha256": "7312455cbd2839d27ea1ff3203809311bced49a9efbe6bf2a45cf9067524fc57",
+        "id": "fonts-fusion-pixel-8-mono-e4e1a8b5cf7f",
+        "path": "fonts/fusion-pixel/8px-mono/fusion-pixel-8px-monospaced-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-monospaced-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
+      },
+      {
+        "bytes": 3095908,
+        "sha256": "1497782318b3336dcef15b42b87cf112724a014bdf7572928c007af92b0cdd69",
+        "id": "fonts-fusion-pixel-8-proportional-65d8abeb78e0",
+        "path": "fonts/fusion-pixel/8px-proportional/fusion-pixel-8px-proportional-latin.bdf",
+        "version": "2026.09.25",
+        "source_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-8px-proportional-bdf-v2026.09.25.zip",
+        "license": "OFL-1.1"
       }
     ]
   },
@@ -85,16 +1278,38 @@
       "config_schema": {
         "type": "object",
         "properties": {
-          "color": { "type": "string" },
-          "size": { "type": "integer", "enum": [16, 32] },
-          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"] }
+          "color": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer",
+            "enum": [
+              16,
+              32
+            ]
+          },
+          "font": {
+            "type": "string",
+            "enum": [
+              "tom-thumb-4x6",
+              "spleen-5x8",
+              "spleen-32x64",
+              "unifont-16.0.04"
+            ]
+          }
         },
         "additionalProperties": false
       },
       "input_schema": {
         "type": "object",
-        "required": ["value"],
-        "properties": { "value": { "type": "string" } },
+        "required": [
+          "value"
+        ],
+        "properties": {
+          "value": {
+            "type": "string"
+          }
+        },
         "additionalProperties": false
       }
     },
@@ -104,16 +1319,38 @@
       "config_schema": {
         "type": "object",
         "properties": {
-          "color": { "type": "string" },
-          "size": { "type": "integer", "enum": [16, 32] },
-          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"] }
+          "color": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer",
+            "enum": [
+              16,
+              32
+            ]
+          },
+          "font": {
+            "type": "string",
+            "enum": [
+              "tom-thumb-4x6",
+              "spleen-5x8",
+              "spleen-32x64",
+              "unifont-16.0.04"
+            ]
+          }
         },
         "additionalProperties": false
       },
       "input_schema": {
         "type": "object",
-        "required": ["value"],
-        "properties": { "value": { "type": "number" } },
+        "required": [
+          "value"
+        ],
+        "properties": {
+          "value": {
+            "type": "number"
+          }
+        },
         "additionalProperties": false
       }
     },
@@ -123,12 +1360,25 @@
       "config_schema": {
         "type": "object",
         "properties": {
-          "color": { "type": "string" },
-          "font": { "type": "string", "enum": ["tom-thumb-4x6", "spleen-5x8", "spleen-32x64", "unifont-16.0.04"] }
+          "color": {
+            "type": "string"
+          },
+          "font": {
+            "type": "string",
+            "enum": [
+              "tom-thumb-4x6",
+              "spleen-5x8",
+              "spleen-32x64",
+              "unifont-16.0.04"
+            ]
+          }
         },
         "additionalProperties": false
       },
-      "input_schema": { "type": "object", "additionalProperties": false }
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false
+      }
     }
   ]
 }
